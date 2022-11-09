@@ -1,1 +1,2 @@
-export const api = `https://mail.google.com/mail/u/0/#inbox/FMfcgzGqRQJlVmNVPPnWkHckKMRcDWpk`;
+
+export const url = `https://636b29f2b10125b78fecc0c6.mockapi.io/gearbest/fashion`;
