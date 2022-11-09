@@ -1,10 +1,11 @@
 
 import React from 'react'
 
-const ProductCard = ({ item }) => {
+const ProductCard = ( {title} ) => {
+  console.log(title)
   return (
     <div >
-       
+       <h1>{title}</h1>
     </div>
   )
 }
