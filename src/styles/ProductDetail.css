@@ -1,0 +1,149 @@
+
+.product_details{
+    margin-top:50px;
+}
+.flex_container{
+    display:flex;
+    justify-content:space-evenly;
+}
+.flex_image{
+    border:1px solid rgb(164, 163, 163);
+    width:400px;
+    height:400px;
+    background-color: rgb(247, 243, 243);
+}
+.flex_image>img{
+    width:400px;
+    height:390px;
+}
+.about_product{
+    width:690px;
+    margin-top:-25px;
+}
+.flash_sale{
+    display:flex;
+    height:50px;
+    background-color: #f30240;
+    justify-content: space-between;
+    color:white;
+}
+.flash_sale>div{
+    margin-top:-20px;
+}
+.product_price{
+    color:#f30240;
+    font-size:30px ;
+    font-weight:700;
+    margin-top:7px;
+    margin-left:20px;
+}
+.about_product>span{
+    display:flex;
+    justify-content: space-between;
+    width:250px;
+    height:70px;
+   
+}
+
+.about_product>span>:nth-child(3) {
+    text-decoration: line-through;
+}
+.shipping{
+    display:flex;
+    width:430px;
+    justify-content: space-between;
+}
+.about_product>p{
+    margin-top:-10px;
+    margin-left:90px;
+    line-height: 2px;
+}
+.product{
+    font-size:18px;
+    color:rgb(164, 163, 163);
+}
+.color{
+    display:flex;
+    width:350px;
+    justify-content: space-evenly;
+    margin-top:25px;
+}
+.color>div{
+    margin-left:25px;
+    border:1px solid #f30240;
+    width:60px;
+    height:30px;
+    padding-left:10px;
+    margin-top:17px;
+}
+.qty{
+   display:flex;
+   height:20px;
+   justify-content: space-between;
+   width:250px;
+}
+.counter{
+    display:flex;
+    height:20px;
+    margin-top:20px;
+    margin-left:40px;
+}
+.number{
+    padding-left:17px;
+    border:1px solid rgb(164, 163, 163);
+    padding-right:17px;
+    
+}
+.cartbtn{
+    display:flex;
+    justify-content: flex-end;
+}
+#linkbutton{
+   text-decoration: none;
+}
+.cartbtn>button ,.linkbtn{
+  background-color:#f30240 ;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 25px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+  margin-left:20px;
+}
+
+.cartbtn>button:hover {
+  background-color: white;
+  color:#f30240;
+  transform: translateY(-2px);
+}
+.cart{
+    display:flex;
+    justify-content: space-around;
+    width:79%;
+}
+.socialmedia{
+    display:flex;
+    justify-content:flex-start;
+    padding-top:10px;
+}
+.icon{
+   color: #f30240;
+   font-size:25px;
+   margin-left:10px;
+}
