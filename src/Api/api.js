@@ -1,1 +1,2 @@
-export const api = `https://mail.google.com/mail/u/0/#inbox/FMfcgzGqRQJlVmNVPPnWkHckKMRcDWpk`;
+
+export const url = `http://localhost:8080/products`;

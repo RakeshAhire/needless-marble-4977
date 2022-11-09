@@ -13,6 +13,9 @@ const store = legacy_createStore(
   rootReducer, composeEnhancers(applyMiddleware(thunk))
 
 )
+if (window.Cypress) {
+  window.store = store;
+}
 
 
 export { store };
