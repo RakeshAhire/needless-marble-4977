@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import styles from "../Styles/ProductCard.module.css";
-// import {Link} from "react-router-dom";
+import styles from "../tyles/ProductCard.module.css";
 
 const ProductCard = ({ title, image, price, discount,per, off,id }) => {
   const heartIcon1 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG6HeC2Y4ch1beUcQ68_zGrVfqlERPYJl4klmG3-XJQoEwQVVjV60rQDoxSRHQHpjNOHU&usqp=CAU";
@@ -11,14 +10,10 @@ const ProductCard = ({ title, image, price, discount,per, off,id }) => {
   const handleIcon=()=>{
     setIcon(icon => heartIcon2)
   }
-  const handleClick=()=>{
-    // <Link to={'/'}></Link>
-    // {`/product/${_id}`}
-    console.log(id)
-  }
+
 
   return (
-    <div onClick={handleClick} className={styles.productcard}>
+    <div className={styles.productcard}>
       <img className={styles.imagecard} src={image} alt={title} />
       <h3 className={styles.titlecard}>{title}</h3>
       <h2 style={{color:" #f30240",fontSize:"larger",fontWeight:"500"}}>{price}</h2>
