@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../tyles/ProductCard.module.css";
+import styles from "../Styles/ProductCard.module.css";
 
 const ProductCard = ({ title, image, price, discount,per, off,id }) => {
   const heartIcon1 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG6HeC2Y4ch1beUcQ68_zGrVfqlERPYJl4klmG3-XJQoEwQVVjV60rQDoxSRHQHpjNOHU&usqp=CAU";
