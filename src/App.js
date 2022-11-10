@@ -1,23 +1,13 @@
 
 import './App.css';
-import Home from './Pages/Home';
-import ProductCard from './Components/ProductCard';
-import MensFashion from './Pages/MensFashion';
 import Routing from './Pages/Routing';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
-
-      {/* <Home /> */}
+      <Navbar />
       <Routing/>
-      {/* <ProductCard/> */}
-      {/* <MensFashion/> */}
-      <Home />
-      <ProductCard/>
-      <MensFashion/>
-      hello
-
     </div>
   );
 }
