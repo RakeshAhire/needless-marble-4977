@@ -8,12 +8,9 @@ function App() {
   return (
     <div className="App">
       <Home />
-<<<<<<< HEAD
-=======
-      
       <MensFashion/>
       hello
->>>>>>> cad2c55e304c3e2a514fb85fe30f1a812c5985d7
+
     </div>
   );
 }
