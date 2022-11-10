@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import styles from "../Styles/ProductCard.module.css";
+import styles from "../tyles/ProductCard.module.css";
 
-const ProductCard = ({ title, image, price, discount,per, off }) => {
+const ProductCard = ({ title, image, price, discount,per, off,id }) => {
   const heartIcon1 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG6HeC2Y4ch1beUcQ68_zGrVfqlERPYJl4klmG3-XJQoEwQVVjV60rQDoxSRHQHpjNOHU&usqp=CAU";
   const heartIcon2 = "https://stceciliasinfants.org.uk/wp-content/uploads/2021/05/yellow-heart.png"
-
+  // console.log(id)
   const [icon, setIcon] = useState(heartIcon1)
 
   const handleIcon=()=>{
     setIcon(icon => heartIcon2)
   }
+
 
   return (
     <div className={styles.productcard}>

@@ -1,5 +1,5 @@
 import {BsFacebook,BsYoutube,BsWhatsapp,BsPinterest,BsMessenger,BsInstagram,BsTwitter,} from "react-icons/bs"
-import '../styles/ProductDetail.css'
+import '../Styles/ProductDetail.css'
 
 export const Icons = () => {
 
