@@ -14,7 +14,7 @@ function App() {
       {/* <ProductCard/> */}
       {/* <MensFashion/> */}
       <Home />
-      
+      <ProductCard/>
       <MensFashion/>
       hello
 
