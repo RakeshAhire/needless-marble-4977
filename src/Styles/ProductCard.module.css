@@ -1,0 +1,101 @@
+.topcard {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.maincard {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-template-rows: auto;
+  margin: auto;
+  gap: 22px;
+  border: 1px solid red;
+  width: 70%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.mainsmallcard {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 6px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* margin: auto; */
+
+  text-align: left;
+}
+
+.imagecard {
+  width: 100%;
+  height: 70%;
+}
+
+.titlecard {
+ 
+  height: 113px;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
+  border: 1px solid green;
+}
+
+.discountcard{
+    background-color: #f30240;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    right: 16px;
+}
+
+.heartcard{
+    position: absolute;
+    right: 16px;
+    bottom: 8px
+}
+
+.sidebar {
+ 
+  width: 20%;
+  text-align: left;
+  overflow-y: auto;
+    max-height: 100vh;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 4rem;
+}
+ 
+
+ 
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgb(253, 253, 253);
+  outline: 1px solid rgb(255, 255, 255);
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(145, 134, 134);
+    outline: 1px solid slategrey;
+  }
+
+.productcard {
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+}
