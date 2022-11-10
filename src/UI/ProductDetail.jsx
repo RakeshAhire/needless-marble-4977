@@ -2,7 +2,7 @@
 import axios from "axios"
 import { useParams } from "react-router-dom"
 import {useState ,useEffect} from 'react'
-import '../styles/ProductDetail.css'
+import '../Styles/ProductDetail.css'
 // import {Counter} from './Counter'
 import {Icons} from './Icons'
 import {Link} from 'react-router-dom'
