@@ -1,0 +1,154 @@
+.footer{
+    width:100%;
+    background-color: rgb(249,249,249);
+    bottom: 0px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+
+.firstdiv{
+    width:100%;
+    height:10%;
+    display:flex;
+    background-color: rgb(255,255,255);
+    padding:1%; 
+}
+
+#footertext{
+    display:inline;
+    margin:1%;
+    font-size: larger;
+
+}
+.seconddiv{
+    width:90%;
+    margin:auto;
+    margin-top:2%;
+    background-color:  rgb(255,255,255);
+    display:flex;
+    justify-content: space-around;
+    padding:2%;
+}
+
+.div1
+{
+   text-align: center;
+   padding-top: 1%;
+}
+.font
+{
+    font-size: 18px;
+    font-weight:500;
+}
+.div1 img
+{
+    
+    width: 70%;
+    height:60px;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+ 
+}
+.divs2
+{
+    /* border: 1px solid tomato; */
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 10px;
+    width: 225px;
+}
+
+.divs2>img{
+    height:20%;
+    width:15%;
+    margin: auto;
+}
+
+.main_div2
+{
+   margin:auto;
+    width:90%;
+    /* border: 1px solid green; */
+    height: 12%;
+    box-sizing: border-box;
+    padding-top:2%;
+    display: flex;
+    justify-content:space-between; 
+}
+.top_div
+{
+    display: flex;
+    width:50%;
+    height:100%;
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+    padding: 2%;  
+}
+.font1
+{
+    font-size: 19px;
+    font-weight: 550;
+    color: gray;
+    margin-top: 10px;
+}
+.points
+{
+    width: 350px;
+    height: 40px;
+    font-size: 18px;
+}
+.sub_btn
+{
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 46px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.thirdright{
+    display:flex;
+    width:30%;
+  
+    padding-top:2%;
+    justify-content:space-around;
+    color: rgb(86, 84, 84);
+}
+.icons{
+
+    font-size: 30px;
+}
+.list-unstyled{
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+}
+.row{
+    display:flex;
+    margin:auto;
+   justify-content:space-between;
+   width:90%;
+   font-size: 20px; 
+}
+
+.scan{
+   height:80px;
+   max-width: auto;
+}
+.belowimg{
+    width:100%;
+    height:10%;
+    display: flex;
+    margin:20px 80px auto 80px;
+    gap:15px;
+   
+}
+.belowimg>img{
+   
+    width:3%;
+    /* margin-left:2%; */
+    /* margin:2% 2% 0 0;  */
+    height:18%;
+}
