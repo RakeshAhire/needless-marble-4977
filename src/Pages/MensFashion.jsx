@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ProductCard from "../Components/ProductCard";
-import styles from "../Styles/ProductCard.module.css";
+import styles from "../styles/ProductCard.module.css";
 
 import { getProduct } from "../Redux/AppReducer/action";
 
