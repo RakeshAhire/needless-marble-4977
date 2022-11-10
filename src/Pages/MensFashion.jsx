@@ -5,6 +5,7 @@ import ProductCard from "../Components/ProductCard";
 import styles from "../Styles/ProductCard.module.css";
 
 import { getProduct } from "../Redux/AppReducer/action";
+import { Link } from "react-router-dom";
 
 const MensFasion = () => {
   const dispatch = useDispatch();
@@ -81,13 +82,13 @@ const MensFasion = () => {
           {products.length > 0 &&
             products.map((el) => (
               <div key={el.id} className={styles.mainsmallcard}>
-                <ProductCard {...el} />
+                <Link to={`/products/${el.id}`}><ProductCard {...el} /></Link>
                 
               </div>
             ))}
         </div>
         <div>
-          
+
         </div>
       </div>
     </div>
