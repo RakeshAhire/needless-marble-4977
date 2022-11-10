@@ -3,14 +3,15 @@ import './App.css';
 import Home from './Pages/Home';
 import ProductCard from './Components/ProductCard';
 import MensFashion from './Pages/MensFashion';
+import Routing from './Pages/Routing';
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <ProductCard/>
-      <MensFashion/>
-      hello
+      {/* <Home /> */}
+      <Routing/>
+      {/* <ProductCard/> */}
+      {/* <MensFashion/> */}
     </div>
   );
 }
