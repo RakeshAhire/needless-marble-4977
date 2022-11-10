@@ -8,10 +8,16 @@ import Routing from './Pages/Routing';
 function App() {
   return (
     <div className="App">
+
       {/* <Home /> */}
       <Routing/>
       {/* <ProductCard/> */}
       {/* <MensFashion/> */}
+      <Home />
+      
+      <MensFashion/>
+      hello
+
     </div>
   );
 }
