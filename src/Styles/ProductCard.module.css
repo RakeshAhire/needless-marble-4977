@@ -3,30 +3,41 @@
   margin: auto;
   justify-content: center;
 }
+.allfilterandproduct{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+ 
+  width: 80%;
+}
 
 .maincard {
   display: grid;
-  grid-template-columns: repeat(4, 23%);
+  grid-template-columns: repeat(4, 23.5%);
   grid-template-rows: auto;
   margin: auto;
   gap: 22px;
-  border: 1px solid red;
-  width: 70%;
+  margin-top: 30px;
+  
   justify-content: flex-start;
   align-items: center;
-  margin-left: 20px;
+  
 }
 
 .mainsmallcard {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  
   padding: 6px;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   position: relative;
   /* margin: auto; */
 
   text-align: left;
+}
+
+.mainsmallcard:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .imagecard {
@@ -36,21 +47,21 @@
 
 .titlecard {
  
-  height: 113px;
+  height: 60%;
   font-size: 14px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp:2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   
-  border: 1px solid green;
+ 
 }
 
 .discountcard{
     background-color: #f30240;
     color: white;
-    width: 40px;
-    height: 40px;
+    width: 21%;
+    height: 16%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -70,7 +81,7 @@
 }
 
 .sidebar {
- 
+  
   width: 20%;
   text-align: left;
   overflow-y: auto;
@@ -98,4 +109,100 @@
   display: flex;
   flex-direction: column;
   gap: 4%;
+}
+
+.allfilters{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: flex-start;
+  
+ 
+  
+
+
+}
+
+.allselect{
+display: flex;
+margin-left: 1.6%;
+
+}
+
+.allbrand{
+  display: flex;
+  
+ 
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.allbrandbutton{
+  width: 100px;
+  height: 45px;
+  border: 0.5px solid rgb(158, 153, 153);
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.allbrandbutton:hover{
+  border: 0.5px solid black
+}
+
+.allbrandimg{
+  width: 100px;
+  height: 40px;
+}
+
+.allpricetop{
+  display: flex;
+ 
+  justify-content: flex-start;
+  
+ 
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.allprice{
+  display: grid;
+  grid-template-columns: repeat(6,170px);
+  grid-template-rows: auto;
+  justify-content: flex-start;
+  
+ 
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.allbrandprice{
+  width: 170px;
+  height: 30px;
+  border: 0.5px solid rgb(158, 153, 153);
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.allbrandprice:hover{
+  border: 1px solid black;
+}
+
+.allbrandsort{
+  width: 120px;
+  height: 30px;
+  
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.allbrandsort:hover{
+  background-color: rgb(231, 231, 19);
 }
