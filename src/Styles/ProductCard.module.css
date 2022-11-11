@@ -20,7 +20,7 @@
 .mainsmallcard {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 6px;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -36,10 +36,10 @@
 
 .titlecard {
  
-  height: 113px;
+  height: 60%;
   font-size: 14px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp:2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   
@@ -49,8 +49,8 @@
 .discountcard{
     background-color: #f30240;
     color: white;
-    width: 40px;
-    height: 40px;
+    width: 21%;
+    height: 16%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -98,4 +98,20 @@
   display: flex;
   flex-direction: column;
   gap: 4%;
+}
+
+.allfilters{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid green;
+  width: 75%;
+  margin: auto;
+
+
+}
+
+.allselect{
+display: flex;
+
 }

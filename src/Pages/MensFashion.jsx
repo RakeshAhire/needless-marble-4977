@@ -1,23 +1,46 @@
 
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
 import styles from "../Styles/ProductCard.module.css";
 
 import { getProduct } from "../Redux/AppReducer/action";
+import Filters from "../Components/Filters";
 
 const MensFasion = () => {
   const dispatch = useDispatch();
+  const [searchParams] = useSearchParams();
   const products = useSelector((store) => store.AppReducer.products);
 
   // console.log(products)
-
+  const location = useLocation();
+  const filterChange = (value)=>{
+    console.log(value)
+   products.filter((e)=> e.category == value) 
+    
+  }
   useEffect(() => {
+    // if (location || products.length === 0) {
+    //   const category = searchParams.getAll("category");
+
+    //   const queryParams = {
+    //     params: {
+    //       category: category,
+    //       _sort: searchParams.get("sortBy") && "price",
+    //       _order: searchParams.get("sortBy"),
+    //     },
+    //   };
     dispatch(getProduct());
-  }, []);
+    
+  }, [products]);
 
   return (
     <div>
+      <div>
+        <Filters filterChange = {filterChange}/>
+      </div>
+      
       <div className={styles.topcard}>
         <div className={styles.sidebar}>
           <div style={{marginLeft:"30px"}}>
@@ -77,6 +100,7 @@ const MensFasion = () => {
             <h4 style={{marginTop:"20px"}}>New Arrivals</h4>
           </div>
         </div>
+        
         <div className={styles.maincard}>
           {products.length > 0 &&
             products.map((el) => (

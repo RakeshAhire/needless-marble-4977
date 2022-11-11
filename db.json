@@ -3,6 +3,9 @@
     
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Other Consumer Electronics",
         "id": 1,
         "per": 58,
         "off": "OFF",
@@ -15,6 +18,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Video Game",
         "id": 2,
         "per": 27,
         "off": "OFF",
@@ -27,6 +33,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Portable Audio And Video",
         "id": 3,
         "per": 43,
         "off": "OFF",
@@ -39,6 +48,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"qcy",
+        "category":"Portable Audio And Video",
         "id": 4,
         "per": 28,
         "off": "OFF",
@@ -51,6 +63,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Video Game",
         "id": 5,
         "per": 41,
         "off": "OFF",
@@ -63,6 +78,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Camera And Photo",
         "id": 6,
         "per": 55,
         "off": "OFF",
@@ -75,6 +93,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Video Game",
         "id": 7,
         "per": 38,
         "off": "OFF",
@@ -87,6 +108,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Video Game",
         "id": 8,
         "per": 40,
         "off": "OFF",
@@ -99,6 +123,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Video Game",
         "id": 9,
         "per": 57,
         "off": "OFF",
@@ -111,6 +138,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Camera And Photo",
         "id": 10,
         "per": null,
         "off": "",
@@ -123,6 +153,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Camera And Photo",
         "id": 11,
         "per": 22,
         "off": "OFF",
@@ -135,6 +168,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Camera And Photo",
         "id": 12,
         "per": 12,
         "off": "OFF",
@@ -147,6 +183,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"qcy",
+        "category":"Camera And Photo",
         "id": 13,
         "per": 41,
         "off": "OFF",
@@ -159,6 +198,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"oukitel",
+        "category":"Video Game",
         "id": 14,
         "per": 35,
         "off": "OFF",
@@ -171,6 +213,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"oukitel",
+        "category":"Camera And Photo",
         "id": 15,
         "per": 34,
         "off": "OFF",
@@ -183,6 +228,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"oukitel",
+        "category":"Camera And Photo",
         "id": 16,
         "per": 54,
         "off": "OFF",
@@ -195,6 +243,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"oukitel",
+        "category":"Camera And Photo",
         "id": 17,
         "per": 47,
         "off": "OFF",
@@ -207,6 +258,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"oukitel",
+        "category":"Other Consumer Electronics",
         "id": 19,
         "per": null,
         "off": "",
@@ -219,6 +273,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"oukitel",
+        "category":"Camera And Photo",
         "id": 20,
         "per": 33,
         "off": "OFF",
@@ -231,6 +288,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Video Game",
         "id": 21,
         "per": 50,
         "off": "OFF",
@@ -243,6 +303,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Camera And Photo",
         "id": 22,
         "per": 16,
         "off": "OFF",
@@ -255,6 +318,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Headphones And Earphones",
         "id": 23,
         "per": 55,
         "off": "OFF",
@@ -267,6 +333,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Camera And Photos",
         "id": 24,
         "per": 39,
         "off": "OFF",
@@ -279,6 +348,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Other Consumer Electronics",
         "id": 25,
         "per": null,
         "off": "",
@@ -291,6 +363,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Other Consumer Electronics",
         "id": 26,
         "per": 50,
         "off": "OFF",
@@ -303,6 +378,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Headphones And Earphones",
         "id": 27,
         "per": 40,
         "off": "OFF",
@@ -315,6 +393,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Other Consumer Electronics",
         "id": 28,
         "per": 15,
         "off": "OFF",
@@ -327,6 +408,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Headphones And Earphones",
         "id": 29,
         "per": 50,
         "off": "OFF",
@@ -339,6 +423,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"lenovo",
+        "category":"Other Consumer Electronics",
         "id": 30,
         "per": 20,
         "off": "OFF",
@@ -351,6 +438,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"lenovo",
+        "category":"Headphones And Earphones",
         "id": 31,
         "per": 32,
         "off": "OFF",
@@ -363,6 +453,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"lenovo",
+        "category":"Other Consumer Electronics",
         "id":"32",
         "per": null,
         "off": "",
@@ -375,6 +468,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"lenovo",
+        "category":"Other Consumer Electronics",
         "id": 33,
         "per": 21,
         "off": "OFF",
@@ -387,6 +483,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 34,
         "per": null,
         "off": "",
@@ -399,6 +498,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 35,
         "per": 33,
         "off": "OFF",
@@ -411,6 +513,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Headphones And Earphones",
         "id": 36,
         "per": 35,
         "off": "OFF",
@@ -423,6 +528,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 37,
         "per": 52,
         "off": "OFF",
@@ -435,6 +543,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 38,
         "per": 60,
         "off": "OFF",
@@ -447,6 +558,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 39,
         "per": 52,
         "off": "OFF",
@@ -459,6 +573,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 40,
         "per": 38,
         "off": "OFF",
@@ -471,6 +588,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 41,
         "per": 48,
         "off": "OFF",
@@ -483,6 +603,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 42,
         "per": 15,
         "off": "OFF",
@@ -495,6 +618,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 43,
         "per": 68,
         "off": "OFF",
@@ -507,6 +633,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"ticwatch",
+        "category":"Other Consumer Electronics",
         "id": 44,
         "per": null,
         "off": "",
@@ -519,6 +648,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 45,
         "per": null,
         "off": "",
@@ -531,6 +663,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 46,
         "per": 58,
         "off": "OFF",
@@ -543,6 +678,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 47,
         "per": 20,
         "off": "OFF",
@@ -555,6 +693,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 48,
         "per": 32,
         "off": "OFF",
@@ -567,6 +708,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 49,
         "per": 21,
         "off": "OFF",
@@ -579,6 +723,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 50,
         "per": 50,
         "off": "OFF",
@@ -591,6 +738,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 51,
         "per": 43,
         "off": "OFF",
@@ -603,6 +753,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 52,
         "per": 26,
         "off": "OFF",
@@ -615,6 +768,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 53,
         "per": 50,
         "off": "OFF",
@@ -627,6 +783,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 54,
         "per": 52,
         "off": "OFF",
@@ -639,6 +798,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 56,
         "per": 34,
         "off": "OFF",
@@ -651,6 +813,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 57,
         "per": 32,
         "off": "OFF",
@@ -663,6 +828,9 @@
       },
       {
         "discount": "%",
+        "rating": 3,
+        "brand":"aquara",
+        "category":"Other Consumer Electronics",
         "id": 58,
         "per": 45,
         "off": "OFF",
@@ -675,6 +843,9 @@
       },
       {
         "discount": "%",
+        "rating": 2,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 59,
         "per": 12,
         "off": "OFF",
@@ -687,6 +858,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 60,
         "per": 50,
         "off": "OFF",
@@ -699,6 +873,9 @@
       },
       {
         "discount": "%",
+        "rating": 5,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 61,
         "per": 15,
         "off": "OFF",
@@ -711,6 +888,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 62,
         "per": 28,
         "off": "OFF",
@@ -723,7 +903,10 @@
       },
       {
         "discount": "%",
-        "id": 62,
+        "rating": 4,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
+        "id": 132,
         "per": 48,
         "off": "OFF",
         "thumb href": "https://www.gearbest.com/smart-watches/pp_3004332564223563.html?wid=2000001",
@@ -735,6 +918,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"kospet",
+        "category":"Video Game",
         "id": 64,
         "per": 55,
         "off": "OFF",
@@ -747,6 +933,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 65,
         "per": 54,
         "off": "OFF",
@@ -759,6 +948,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 66,
         "per": 46,
         "off": "OFF",
@@ -771,6 +963,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 67,
         "per": 30,
         "off": "OFF",
@@ -783,6 +978,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"kospet",
+        "category":"Other Consumer Electronics",
         "id": 68,
         "per": 37,
         "off": "OFF",
@@ -795,6 +993,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 69,
         "per": 53,
         "off": "OFF",
@@ -807,6 +1008,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 70,
         "per": 25,
         "off": "OFF",
@@ -819,6 +1023,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 71,
         "per": 59,
         "off": "OFF",
@@ -831,6 +1038,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 72,
         "per": 51,
         "off": "OFF",
@@ -843,6 +1053,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 73,
         "per": 33,
         "off": "OFF",
@@ -855,6 +1068,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 74,
         "per": 50,
         "off": "OFF",
@@ -867,6 +1083,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 75,
         "per": 39,
         "off": "OFF",
@@ -879,6 +1098,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Video Game",
         "id": 76,
         "per": 31,
         "off": "OFF",
@@ -891,6 +1113,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 77,
         "per": 44,
         "off": "OFF",
@@ -903,6 +1128,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 78,
         "per": 46,
         "off": "OFF",
@@ -915,6 +1143,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"amazekit",
+        "category":"Other Consumer Electronics",
         "id": 79,
         "per": 35,
         "off": "OFF",
@@ -927,6 +1158,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Other Consumer Electronics",
         "id": 80,
         "per": 31,
         "off": "OFF",
@@ -939,6 +1173,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Video Game",
         "id": 81,
         "per": null,
         "off": "",
@@ -951,6 +1188,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Other Consumer Electronics",
         "id": 82,
         "per": 30,
         "off": "OFF",
@@ -963,6 +1203,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 83,
         "per": 15,
         "off": "OFF",
@@ -975,6 +1218,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 84,
         "per": 40,
         "off": "OFF",
@@ -987,6 +1233,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 85,
         "per": null,
         "off": "",
@@ -999,6 +1248,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 86,
         "per": 21,
         "off": "OFF",
@@ -1011,6 +1263,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Headphones And Earphones",
         "id": 87,
         "per": 16,
         "off": "OFF",
@@ -1023,6 +1278,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 88,
         "per": 52,
         "off": "OFF",
@@ -1035,6 +1293,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Other Consumer Electronics",
         "id": 89,
         "per": 36,
         "off": "OFF",
@@ -1047,6 +1308,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 90,
         "per": 50,
         "off": "OFF",
@@ -1059,6 +1323,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 91,
         "per": 55,
         "off": "OFF",
@@ -1071,6 +1338,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 92,
         "per": 39,
         "off": "OFF",
@@ -1083,6 +1353,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Headphones And Earphones",
         "id": 93,
         "per": 50,
         "off": "OFF",
@@ -1095,6 +1368,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 94,
         "per": 50,
         "off": "OFF",
@@ -1107,6 +1383,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 95,
         "per": 20,
         "off": "OFF",
@@ -1119,6 +1398,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 96,
         "per": null,
         "off": "",
@@ -1131,6 +1413,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 97,
         "per": null,
         "off": "",
@@ -1143,6 +1428,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 98,
         "per": null,
         "off": "",
@@ -1155,6 +1443,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"HIFI Devices",
         "id": 99,
         "per": 50,
         "off": "OFF",
@@ -1167,6 +1458,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Smart Electronics",
         "id": 100,
         "per": 15,
         "off": "OFF",
@@ -1179,6 +1473,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 101,
         "per": null,
         "off": "",
@@ -1191,6 +1488,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Headphones And Earphones",
         "id": 102,
         "per": 10,
         "off": "OFF",
@@ -1203,6 +1503,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Other Consumer Electronics",
         "id": 103,
         "per": 17,
         "off": "OFF",
@@ -1215,6 +1518,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Smart Electronics",
         "id": 104,
         "per": 36,
         "off": "OFF",
@@ -1227,6 +1533,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Smart Electronics",
         "id": 105,
         "per": 26,
         "off": "OFF",
@@ -1239,6 +1548,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 106,
         "per": 30,
         "off": "OFF",
@@ -1251,6 +1563,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Other Consumer Electronics",
         "id": 107,
         "per": 39,
         "off": "OFF",
@@ -1263,6 +1578,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Smart Electronics",
         "id": 108,
         "per": 39,
         "off": "OFF",
@@ -1275,6 +1593,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Headphones And Earphones",
         "id": 109,
         "per": 31,
         "off": "OFF",
@@ -1287,6 +1608,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Smart Electronics",
         "id": 110,
         "per": null,
         "off": "",
@@ -1299,6 +1623,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 111,
         "per": 34,
         "off": "OFF",
@@ -1311,6 +1638,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Smart Electronics",
         "id": 112,
         "per": null,
         "off": "",
@@ -1323,6 +1653,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Portable Audio And Video",
         "id": 113,
         "per": null,
         "off": "",
@@ -1335,6 +1668,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Headphones And Earphones",
         "id": 114,
         "per": 39,
         "off": "OFF",
@@ -1347,6 +1683,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Portable Audio And Video",
         "id": 115,
         "per": null,
         "off": "",
@@ -1359,6 +1698,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 116,
         "per": 48,
         "off": "OFF",
@@ -1371,6 +1713,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Other Consumer Electronics",
         "id": 117,
         "per": 53,
         "off": "OFF",
@@ -1383,6 +1728,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Headphones And Earphones",
         "id": 118,
         "per": 50,
         "off": "OFF",
@@ -1395,6 +1743,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Portable Audio And Video",
         "id": 119,
         "per": 50,
         "off": "OFF",
@@ -1407,6 +1758,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 120,
         "per": 27,
         "off": "OFF",
@@ -1419,6 +1773,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Headphones And Earphones",
         "id": 121,
         "per": 30,
         "off": "OFF",
@@ -1431,6 +1788,9 @@
       },
       {
         "discount": "%",
+        "rating": 4,
+        "brand":"mi",
+        "category":"Security And Protection",
         "id": 122,
         "per": 22,
         "off": "OFF",
