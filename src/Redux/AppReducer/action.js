@@ -12,9 +12,9 @@ const getProductRequest =()=>{
 
 
 
-const getProduct = () =>(dispatch) =>{
+const getProduct = (queryParams) =>(dispatch) =>{
     dispatch(getProductRequest());
-    return axios.get(`http://localhost:8080/products`)
+    return axios.get(`http://localhost:8080/products`,queryParams)
     .then((res)=>{
         dispatch({
             type: types.GET_PRODUCTS_SUCCESS,
