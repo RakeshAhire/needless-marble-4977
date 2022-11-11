@@ -1,18 +1,13 @@
 
 import './App.css';
-
-import MensFasion from './Pages/MensFashion';
+import Routing from './Pages/Routing';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
-
-     
-      {/* <Routing/>
-      
-      <Home /> */}
-      
-      <MensFasion/>
+      <Navbar />
+      <Routing/>
     </div>
   );
 }
