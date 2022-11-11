@@ -72,6 +72,4 @@ const Slide = () => {
             </Slider>
         </div>
     );
-}
-
 export default Slide
