@@ -116,7 +116,7 @@ const MensFasion = () => {
             {products.length > 0 &&
               products.map((el) => (
                 <div key={el.id} className={styles.mainsmallcard}>
-                  <Link to={`/productDetails/cart/${el.id}`}> 
+                  <Link to={`/product/${el.id}`}> 
                   <ProductCard {...el} />
                   </Link>
                 </div>
