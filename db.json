@@ -1802,6 +1802,56 @@
         "dollar": "$"
       }
      ]
+     ,
+     "register": [
+      {
+        "user": "sohir94yadav",
+        "pwd": "Rohit@123",
+        "id": 1
+      },
+      {
+        "user": "rohit94yadav",
+        "pwd": "Rohit@123",
+        "id": 2
+      },
+      {
+        "user": "shubham123",
+        "pwd": "Shubham@123",
+        "id": 3
+      },
+      {
+        "user": "shubham123",
+        "pwd": "Shubham@123",
+        "id": 4
+      }
+    ],
+    "auth": [
+      {
+        "user": "sohir94yadav",
+        "pwd": "Rohit@123",
+        "id": 1
+      },
+      {
+        "user": "rohit94yadav",
+        "pwd": "Rohit@123",
+        "id": 2
+      },
+      {
+        "user": "rohitinvijefnv",
+        "pwd": " vd ffv  f",
+        "id": 3
+      },
+      {
+        "user": "cwewcewc",
+        "pwd": "cwdedce",
+        "id": 4
+      },
+      {
+        "user": "shubham123",
+        "pwd": "12",
+        "id": 5
+      }
+    ]
   
   
  

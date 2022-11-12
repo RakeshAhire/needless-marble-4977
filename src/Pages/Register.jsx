@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import  "./auth.css"
+import "../Styles/auth.css"
 
 
 export const Register = () => {
@@ -11,8 +11,7 @@ export const Register = () => {
 
     })
    
-
-    const handleChange = (e) => {
+        const handleChange = (e) => {
         
         const { id, value } = e.target;
         setSign({
