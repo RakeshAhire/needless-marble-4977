@@ -9,33 +9,30 @@ import { Product } from "../UI/Product";
 
 
 export const Cart = () => {
+  const [data,setData]=useState([])
+  useEffect(()=>{
+      axios.get('http://localhost:8080/cartData')
+      .then((res)=>setData(res.data))
+      .catch((err)=>console.log(err))
+  },[]);
+  console.log(data)
   const setOrder=()=>{
-    fetch(`http://localhost:7005/placeorder`,{
-    method:'POST',
-    headers:{
-      "Content-Type":"application/json"
-    },
-    body:JSON.stringify(Product)
-  })
-   localStorage.setItem('placeorder',JSON.stringify(Product))
-
+   
   }
-
-  const cartData = useSelector((store)=>{
-    return  store.cartItems.cartItems
-   })
-   console.log("cartData",cartData)
+  // const cartData = useSelector((store)=>store.AppReducer.cartData )
+  //  console.log("cartData",cartData)
    
 
    let total = 0;
- cartData.map((item)=>{
-   total+=item.totalprice
- })
- console.log(total)
+//  cartData.map((item)=>{
+//    total+=item.totalprice
+//  })
+
   return (
     
     <div>
-      <Card>
+      <h1>Welcome to cart page</h1>
+      {/* <Card>
         <div className={`${styles.headingContainer} ${styles.InsideDivText}`}>
           <div className={styles.SelectedItemDiv}>
             <span>Selected Item</span>
@@ -133,7 +130,7 @@ export const Cart = () => {
            <p>We Accept:</p>
            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa3Ocn9J1bc4KS6eZSI99m-60nlAAVuPzOeA&usqp=CAU" alt="" /><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtKmBen6LXOcj2RS4j8kVxuNwVXdlZlH9ssw&usqp=CAU" alt="" /><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO1kOqlF34uhfybYDzd0nQcgubhC9bvIvI_w&usqp=CAU" alt="" />
         </div>
-      </Card>
+      </Card> */}
      
     </div>
   );

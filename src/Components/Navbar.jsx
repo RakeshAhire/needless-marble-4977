@@ -1,14 +1,22 @@
-import { Box, Flex, Image, Input, Select, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Center, Flex, Image, Input, Select, Text } from '@chakra-ui/react'
+import React, { useState } from 'react'
 import logo from "../Images/Mega Kart Logo.jpg";
 import { FiSearch } from 'react-icons/fi';
 import {AiOutlineUser,AiOutlineShoppingCart} from 'react-icons/ai';
 import { GiLoveMystery } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
+  const [text,setText]=useState()
 
   return (
-    <Box w='70%' m={"auto"} position="sticky">
-      <Box>
+    <Center mt="52px" mb="60px">
+    <Box width={[
+      '80%', // 0-30em
+      '80%', // 30em-48em
+      '90%', // 48em-62em
+      '100%', // 62em+
+    ]} position="fixed" zIndex="99" bgColor={"white"} m="auto" p={"5px 15px"} >
+      <Box >
         <Flex gap={5} justifyContent="flex-end">
           <Text fontSize='md'>Save $3 with app</Text>
           <Text fontSize='md'>Support Center</Text>
@@ -20,7 +28,7 @@ const Navbar = () => {
       <Box >
         <Flex align={"center"} justifyContent="space-between">
           <Image w="200px" h="80px" src={logo} alt="Logo" />
-          <Flex p={"10px 20px"} border="1px" borderRadius={10} borderColor="#ffda00" align={"center"} gap="20px" >
+          <Flex p={{sm: "2px 10px", md: "5px 15px",lg:"7px 20px"}} border="1px" borderRadius={10} borderColor="#ffda00" align={"center"} gap="20px" >
             <Select placeholder='All' w="60px" variant='unstyled' >
               <option value='option3'>MARKETPLACE</option>
               <option value='option3'>Gearbest Selection</option>
@@ -32,18 +40,19 @@ const Navbar = () => {
               <option value='option3'>Drones, Toys & Hobbies</option>
               <option value='option3'>Health & Personal Care</option>
             </Select>
-            <Input src='' variant='unstyled' w="sm" placeholder='Search' size='md' />
-            <Box bgColor="#ffda00"><FiSearch /></Box>
+            <Input variant='unstyled' w={{sm: '100px', md: '100px',lg:'sm'}} placeholder='Search'  />
+            <Box bgColor="#ffda00" ><FiSearch size="2em" /></Box>
             {/* <Image /> */}
           </Flex>
           <Flex  gap={5}>
-            <Flex align={"center"}><AiOutlineUser /> <Text>Sign In</Text> </Flex>
-            <Flex align={"center"}><GiLoveMystery /><Text>Favorites</Text> </Flex>
-            <Flex align={"center"}><AiOutlineShoppingCart /><Text>Cart</Text> </Flex>
+            <Flex align={"center"} gap={2}><AiOutlineUser size="1.5em" /> <Text>Sign In</Text> </Flex>
+            <Flex align={"center"} gap={2}><GiLoveMystery size="1.5em"/><Text>Favorites</Text> </Flex>
+            <Flex align={"center"} gap={2}><Link to="/cart"><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Link></Flex>
           </Flex>
         </Flex>
       </Box>
     </Box>
+    </Center>
   )
 }
 

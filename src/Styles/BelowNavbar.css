@@ -1,0 +1,25 @@
+.slick-prev:before,
+.slick-next:before {
+  color: #fe0000 ;
+  font-size: 30px ;
+}
+
+.slick-prev {
+  top: 90.5% ;
+  /* bottom: 100% ; */
+  left: 70% ;
+  /* right: 5% ; */
+  z-index: 9999;
+}
+
+.slick-next {
+  top: 90% ;
+  right: 5% ;
+}
+
+.slick-dots li button:before {
+  top: -300% ;
+  left: 2000% ;
+  font-size: 30px ;
+
+}

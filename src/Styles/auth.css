@@ -1,0 +1,136 @@
+#p32 {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid rgb(31, 18, 18); */
+}
+
+#imglogo img {
+    width: 220px;
+    height: 50px;
+}
+
+.registerDiv {
+    margin-left: 60%;
+   width: 32%;
+  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.bttn23 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.bttn23 button {
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 22px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border: none;
+    font-weight: bold;
+    color: rgb(207, 195, 195);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bttn23 button:hover {
+    border-bottom: 5px solid gold;
+    color: rgb(11, 9, 9);
+
+}
+
+.login_username {
+    width: 85%;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid rgb(207, 182, 182);
+}
+
+.login_password {
+    border: 1px solid rgb(207, 182, 182);
+    width: 85%;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.checkbox{
+    margin-left: 20px;
+    margin-top: 22px;
+    margin-right: 5px;
+    
+}
+#ptag{
+    margin-left: 10%;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(167, 134, 134);
+}
+#span3{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+#span4{
+    /* border: 1px solid black; */
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+}
+#span4>p>a{
+    color: rgb(44, 153, 153);
+    border-bottom: solid 1px;
+}
+.login_submit {
+    width: 86%;
+    height: 45px;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: gold;
+    border: none;
+    margin-bottom: 10px;
+}
+#goog2{
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+#goog2 img{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 45px;
+    
+}
+#img234{
+    width: 42%;
+    height: 45px;
+    margin-left: 2px;
+    
+}
+.login_password1 {
+    border: 1px solid rgb(207, 182, 182);
+    width: 42.5%;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 20px;
+  
+}
+#ppk2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#tip1{
+    font-size: 12px;
+    width: 85%;
+    margin: auto;
+    color: red;
+}
