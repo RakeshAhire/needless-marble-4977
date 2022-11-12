@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
@@ -6,35 +6,40 @@ import styles from "../Styles/ProductCard.module.css";
 
 import { getProduct } from "../Redux/AppReducer/action";
 import Filters from "../Components/Filters";
+import Pagination from "../Components/Pagination";
 
 const MensFasion = () => {
   const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
+  const [page, setPage] = useState(1);
   const products = useSelector((store) => store.AppReducer.products);
 
-  // console.log(products)
   const location = useLocation();
-  // const filterChange = (value) => {
-  //   console.log(value);
-  //   products.filter((e) => e.category == value);
-  // };
+//  console.log("totals",Math.ceil(products.length/12))
+
+//  const total = products.length/12
+ 
   useEffect(() => {
     if (location || products.length === 0) {
       const category = searchParams.getAll("category");
-
+      const brand = searchParams.getAll("brand")
+      //  const page = searchParams.getAll("page")
       const queryParams = {
         params: {
           category: category,
+          brand:brand,
           _sort: searchParams.get("sortBy") && "price",
           _order: searchParams.get("sortBy"),
+          _page : page,
+          _limit : 12,
         },
       };
     dispatch(getProduct(queryParams));
     }
-  }, [location]);
+  }, [location,page]);
 
   return (
-    <div>
+    <div style={{width:"90%",display:"flex",flexDirection:"column",margin:"auto",justifyContent:"center"}}>
       <div className={styles.topcard}>
         <div className={styles.sidebar}>
           <div style={{ marginLeft: "30px" }}>
@@ -111,13 +116,17 @@ const MensFasion = () => {
             {products.length > 0 &&
               products.map((el) => (
                 <div key={el.id} className={styles.mainsmallcard}>
+                  <Link to={`/productDetails/cart/${el.id}`}> 
                   <ProductCard {...el} />
+                  </Link>
                 </div>
               ))}
           </div>
         </div>
         
       </div>
+      
+      <Pagination  total={10} current={page} onChange={(value)=> setPage(value)} />
     </div>
   );
 };
