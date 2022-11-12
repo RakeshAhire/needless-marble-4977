@@ -21,9 +21,7 @@ export const Cart = () => {
 
   }
 
-  const cartData = useSelector((store)=>{
-    return  store.cartItems.cartItems
-   })
+  const cartData = useSelector((store)=>store.AppReducer.cartData )
    console.log("cartData",cartData)
    
 

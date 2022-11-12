@@ -16,6 +16,13 @@ const addProductRequest = () => {
     };
   };
 
+  const addCartSuccess=(payload)=>{
+    console.log(payload);
+    return{
+      type:types.ADD_CART_SUCCESS,
+      payload
+    }
+  }
 
 
 const getProduct = (queryParams) =>(dispatch) =>{
@@ -54,4 +61,4 @@ const addProduct = (product) => (dispatch) => {
       });
   };
 
-export {getProduct, getProductRequest, addProduct, addProductRequest}
+export {getProduct, getProductRequest, addProduct, addProductRequest,addCartSuccess}

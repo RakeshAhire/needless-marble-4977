@@ -6,6 +6,8 @@ import Login from './Login'
 import MensFasion from './MensFashion'
 import Register from './Register'
 
+
+
 const Home = () => {
   return (
     <div>
