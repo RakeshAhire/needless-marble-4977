@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // // import { useState } from "react";
 // // import axios from "axios";
 // // import { useDispatch, useSelector } from "react-redux";
@@ -122,10 +121,10 @@
 
 
 import { useRef, useState, useEffect, useContext } from 'react';
-import AuthContext from "../Redux/context/AuthContext";
+import AuthContext from "./context/AuthContext";
+import axios from '../Api/axios';
 import "../Styles/Login.css"
 
-import axios from '../Api/axios';
 const LOGIN_URL = '/auth';
 
 const Login = () => {
@@ -176,17 +175,6 @@ const Login = () => {
                 setErrMsg('Login Failed');
             }
             errRef.current.focus();
-=======
-      .post("https://morning-scrubland-78864.herokuapp.com/login", login)
-      .then((res) => {
-        console.log(res);
-        if (res.status === 200) {
-          alert("login sucesfully");
-          navigate("/")
-        } else if (res.status === 500) {
-          alert("Email or password is wrong");
-          return;
->>>>>>> f884e50e9f2079a22b9ad3ecbb9eb776455a6cb4
         }
     }
 
