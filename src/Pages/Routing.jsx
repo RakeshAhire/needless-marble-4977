@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './Home'
 import { ProductDetail } from "../UI/ProductDetail";
 import {Cart } from "./Cart";
-import { Payment } from './components/Payment';
+import { Payment } from '../UI/Payment';
 
 const Routing = () => {
     return (
