@@ -1,16 +1,16 @@
 import { useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { isAuth } from "../src/isAuth/action";
-// import { useNavigate } from "react-router-dom";
-import "./auth.css"
+import { isAuth } from "../Redux/AuthReducer/action";
+import { useNavigate } from "react-router-dom";
+import "../Styles/auth.css"
 
 export const Login = () => {
-  // const navigate=useNavigate()
+  const navigate=useNavigate()
   const dispatch = useDispatch();
   const [login, setlogin] = useState({
     email: "",
-    //  password: "",
+     password: "",
   });
 
   const loginData = (e) => {
@@ -23,7 +23,7 @@ export const Login = () => {
   const checklogin = (e) => {
     e.preventDefault();
     dispatch(isAuth(true));
-    // navigate("")
+    navigate("")
 
     axios
     
@@ -32,7 +32,7 @@ export const Login = () => {
         console.log(res);
         if (res.status === 200) {
           alert("login sucesfully");
-          // navigate("/")
+          navigate("/")
         } else if (res.status === 500) {
           alert("Email or password is wrong");
           return;
