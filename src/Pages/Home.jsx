@@ -11,7 +11,6 @@ const Home = () => {
       <BelowNavbar />
       <MensFasion/>
       <Footer />
-      
     </div>
   )
 }
