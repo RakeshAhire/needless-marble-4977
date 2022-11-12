@@ -13,8 +13,8 @@ const Navbar = () => {
       '80%', // 0-30em
       '80%', // 30em-48em
       '90%', // 48em-62em
-      '80%', // 62em+
-    ]} position="fixed" zIndex="99" bgColor={"white"} m="auto" >
+      '100%', // 62em+
+    ]} position="fixed" zIndex="99" bgColor={"white"} m="auto" p={"5px 15px"} >
       <Box >
         <Flex gap={5} justifyContent="flex-end">
           <Text fontSize='md'>Save $3 with app</Text>
