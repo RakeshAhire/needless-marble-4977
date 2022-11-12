@@ -4,6 +4,7 @@ import logo from "../Images/Mega Kart Logo.jpg";
 import { FiSearch } from 'react-icons/fi';
 import {AiOutlineUser,AiOutlineShoppingCart} from 'react-icons/ai';
 import { GiLoveMystery } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [text,setText]=useState()
 
@@ -46,7 +47,7 @@ const Navbar = () => {
           <Flex  gap={5}>
             <Flex align={"center"} gap={2}><AiOutlineUser size="1.5em" /> <Text>Sign In</Text> </Flex>
             <Flex align={"center"} gap={2}><GiLoveMystery size="1.5em"/><Text>Favorites</Text> </Flex>
-            <Flex align={"center"} gap={2}><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Flex>
+            <Flex align={"center"} gap={2}><Link to="/cart"><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Link></Flex>
           </Flex>
         </Flex>
       </Box>
