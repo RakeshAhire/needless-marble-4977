@@ -217,3 +217,22 @@ margin-left: 1.6%;
 .trianglebtn:hover{
   width: 30px;
 }
+
+.formdiv{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: left;
+}
