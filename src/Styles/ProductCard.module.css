@@ -2,6 +2,7 @@
   display: flex;
   margin: auto;
   justify-content: center;
+  width: 99%;
 }
 .allfilterandproduct{
   display: flex;
@@ -146,6 +147,7 @@ margin-left: 1.6%;
   margin: auto;
   justify-content: center;
   align-items: center;
+  
 }
 .allbrandbutton:hover{
   border: 0.5px solid black
@@ -159,7 +161,7 @@ margin-left: 1.6%;
 .allpricetop{
   display: flex;
  
-  justify-content: flex-start;
+  margin-left: 1%;
   
  
   align-items: center;
@@ -169,24 +171,25 @@ margin-left: 1.6%;
 
 .allprice{
   display: grid;
-  grid-template-columns: repeat(6,170px);
+  grid-template-columns: repeat(6,140px);
   grid-template-rows: auto;
   justify-content: flex-start;
   
  
   align-items: center;
   margin-top: 20px;
-  gap: 10px;
+  gap: 6px;
 }
 
 .allbrandprice{
-  width: 170px;
+  width: 80%;
   height: 30px;
   border: 0.5px solid rgb(158, 153, 153);
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
+  font-size: smaller;
 }
 
 .allbrandprice:hover{
@@ -205,4 +208,12 @@ margin-left: 1.6%;
 
 .allbrandsort:hover{
   background-color: rgb(231, 231, 19);
+}
+
+.trianglebtn{
+  width: 20px;
+}
+
+.trianglebtn:hover{
+  width: 30px;
 }

@@ -6,7 +6,7 @@ import MensFasion from './MensFashion'
 const Home = () => {
   return (
     <div>
-      <Slide />
+      {/* <Slide /> */}
       <MensFasion/>
       <Footer />
     </div>
