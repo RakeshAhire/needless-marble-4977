@@ -1,4 +1,4 @@
-import { GET_PRODUCTS_FAILURE, GET_PRODUCTS_REQUEST, GET_PRODUCTS_SUCCESS } from "./actionTypes";
+import { ADD_PRODUCT_FAILURE, ADD_PRODUCT_REQUEST, ADD_PRODUCT_SUCCESS, GET_PRODUCTS_FAILURE, GET_PRODUCTS_REQUEST, GET_PRODUCTS_SUCCESS } from "./actionTypes";
 
 
 const initialState = {
@@ -55,25 +55,25 @@ const initialState = {
         // }
     
     
-        // case ADD_PRODUCT_REQUEST:
-        // return {
-        //   ...oldState,
-        //   isLoading: true,
-        // }
+        case ADD_PRODUCT_REQUEST:
+        return {
+          ...oldState,
+          isLoading: true,
+        }
     
-        // case ADD_PRODUCT_SUCCESS:
-        // return {
-        //   ...oldState,
-        //   isLoading: false,
-        //   products: payload,
-        // }
+        case ADD_PRODUCT_SUCCESS:
+        return {
+          ...oldState,
+          isLoading: false,
+          products: payload,
+        }
     
-        // case ADD_PRODUCT_FAILURE:
-        // return {
-        //   ...oldState,
-        //   isLoading: false,
-        //   isError: true,
-        // }
+        case ADD_PRODUCT_FAILURE:
+        return {
+          ...oldState,
+          isLoading: false,
+          isError: true,
+        }
     
     
     

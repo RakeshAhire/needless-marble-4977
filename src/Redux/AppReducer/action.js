@@ -10,6 +10,12 @@ const getProductRequest =()=>{
     }
 }
 
+const addProductRequest = () => {
+    return {
+      type: types.ADD_PRODUCT_REQUEST,
+    };
+  };
+
 
 
 const getProduct = (queryParams) =>(dispatch) =>{
@@ -30,4 +36,22 @@ const getProduct = (queryParams) =>(dispatch) =>{
     })
 }
 
-export {getProduct, getProductRequest}
+
+const addProduct = (product) => (dispatch) => {
+    dispatch(addProductRequest());
+    return axios
+      .post(`http://localhost:8080/products`,product)
+      .then((res) => {
+        dispatch({
+          type: types.ADD_PRODUCT_SUCCESS,
+          payload: res.data,
+        });
+      })
+      .catch((err) => {
+        dispatch({
+          type: types.ADD_PRODUCT_FAILURE,
+        });
+      });
+  };
+
+export {getProduct, getProductRequest, addProduct, addProductRequest}
