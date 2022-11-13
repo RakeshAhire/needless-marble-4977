@@ -27,7 +27,7 @@ const Navbar = () => {
       </Box>
       <Box >
         <Flex align={"center"} justifyContent="space-between">
-          <Image w="200px" h="80px" src={logo} alt="Logo" />
+          <Link to="/"><Image w="200px" h="80px" src={logo} alt="Logo" /></Link>
           <Flex p={{sm: "2px 10px", md: "5px 15px",lg:"7px 20px"}} border="1px" borderRadius={10} borderColor="#ffda00" align={"center"} gap="20px" >
             <Select placeholder='All' w="60px" variant='unstyled' >
               <option value='option3'>MARKETPLACE</option>
@@ -45,9 +45,10 @@ const Navbar = () => {
             {/* <Image /> */}
           </Flex>
           <Flex  gap={5}>
-            <Flex align={"center"} gap={2}><AiOutlineUser size="1.5em" /> <Text>Sign In</Text> </Flex>
-            <Flex align={"center"} gap={2}><GiLoveMystery size="1.5em"/><Text>Favorites</Text> </Flex>
+            <Link to="/login"><Flex align={"center"} gap={2} color={'black'}><AiOutlineUser size="1.5em" /> <Text>Sign In</Text> </Flex></Link>
+            <Flex align={"center"} gap={2} color={'black'}><GiLoveMystery size="1.5em"/><Text>Favorites</Text> </Flex>
             <Link to="/cart"><Flex align={"center"} gap={2} color={'black'}><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Flex></Link>
+            <Link to="/admin-page"><Flex align={"center"} gap={2} color={'black'}><AiOutlineUser size="1.5em" /> <Text>Admin</Text> </Flex></Link>
           </Flex>
         </Flex>
       </Box>

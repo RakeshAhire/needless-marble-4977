@@ -76,7 +76,7 @@ const BelowNavbar = () => {
             </Flex>
 
             {/* Slider Part */}
-            <Box>
+            {/* <Box>
                 <Slider {...settings}>
                     <div>
                         <Image w="450px" h="300px" src='https://uidesign.gbtcdn.com/GB/image/8823/lQDPJxa0uAZUaPTNASzNAcKwpTzUF6FCvx4DKSfz08AdAA_450_300.jpg' />
@@ -97,7 +97,7 @@ const BelowNavbar = () => {
                         <h3>6</h3>
                     </div>
                 </Slider>
-            </Box>
+            </Box> */}
 
         </>
     )

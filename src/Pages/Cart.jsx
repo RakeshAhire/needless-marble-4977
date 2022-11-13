@@ -42,7 +42,7 @@ export const Cart = () => {
             <div><h3>Discount:  --</h3></div>
             <div><h2>Total: {total}</h2></div>
           </div>
-          <button>Checkout</button>
+          <button><Link to='/shipping'>Checkout</Link></button>
         </div>
       }
       <Footer />

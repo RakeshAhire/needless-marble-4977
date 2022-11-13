@@ -1,0 +1,118 @@
+.mainConatiner{
+    width:90%;
+    background-color:rgb(247,247,247);
+    margin-top: 5%;
+    padding-top: 5%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.gearBestImgInConfirm{
+    width:100%;
+    height:100px;
+    background-color:white;
+    margin-bottom:10px;
+}
+.gearBestImgInConfirm>img{
+    height:60px;
+    width:190px;
+    margin-left:4%;
+    margin-top:0.5%;
+}
+.default{
+    width:80px;
+    height:30px;
+    background-color:yellow;
+    text-align:center;
+    margin-left:2%
+}
+.mainDivOfOrderItems{
+    display:flex;
+    margin:auto;
+    margin-bottom: 2%;
+    border:1px solid gray;
+    height:150px;
+    align-items:center;
+    padding:1%;
+    width:90%;
+    background-color: white;
+}
+.divForImg{
+    width:20%;
+    
+}
+
+.divForTitle{
+    display:flex;
+    width:60%;
+    
+}
+.ptagforPrice{
+    color:red;
+    font-size:20px;
+   display:flex;
+   justify-content: right;
+    padding:10%;
+}
+
+.mainDivOfOrderTotal{
+    display:flex;
+    margin:auto;
+    margin-bottom: 2%;
+    border:1px solid gray;
+    /* height:150px; */
+    /* align-items:center; */
+    padding:1%;
+    width:90%;
+    background-color:rgb(253,236,244);
+    justify-content: space-between;
+}
+
+.itemtotal{
+    display:flex;
+    justify-content:space-around;
+    line-height: 10px;
+}
+.Coupon{
+    background-color:black;
+    filter: grayscale(1);
+    margin-bottom:2%;
+}
+.enterCoupon{
+    width:40%;
+    padding:1%;
+    font-size:24px;
+    border:none
+}
+.Apply{
+    padding:0.5%;
+    font-size:20px;
+    background-color:#ffda00;
+    border:none
+}
+.Apply:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.placeOrder{
+    width:100%;
+    font-size:20px;
+    padding:5px;
+    background-color:#ffda00;
+    border:none;
+    margin-top: 20px;
+}
+.placeOrder:hover{
+    background-color:rgb(7, 166, 57);
+}
+.containeradd{
+    width:90%;
+    padding-left:30px;
+    background-color: white;
+    margin:auto;
+    border:1px solid gray;
+    margin-bottom: 30px;
+    /* border: 1px solid red; */
+}
+.placeOrder:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

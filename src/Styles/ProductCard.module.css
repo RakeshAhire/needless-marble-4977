@@ -3,6 +3,7 @@
   margin: auto;
   justify-content: center;
   width: 99%;
+  margin-top: 50px;
 }
 .allfilterandproduct{
   display: flex;

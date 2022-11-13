@@ -1928,5 +1928,31 @@
       "priceTag": "Flash Sale",
       "dollar": "$"
     }
+  ],
+  "addAddress": [
+    {
+      "First_Name": "Rakesh",
+      "Last_Name": "Ahire",
+      "Address": "Nashik",
+      "City": "Nashik",
+      "State": "MH",
+      "Country": "IN",
+      "PinCode": "423301",
+      "PhoneNo": "9766555424",
+      "Email": "rakeshahire@gmail.com",
+      "id": 1
+    },
+    {
+      "First_Name": "Rohit",
+      "Last_Name": "Yadav",
+      "Address": "Gurgaon",
+      "City": "Delhi",
+      "State": "DL",
+      "Country": "IN",
+      "PinCode": "4568665",
+      "PhoneNo": "8568978452",
+      "Email": "rohit123@gmail.com",
+      "id": 2
+    }
   ]
 }
