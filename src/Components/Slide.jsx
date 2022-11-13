@@ -18,11 +18,11 @@ const Slide = () => {
 
     };
     return (
-        <div>
-            <Box  w="80%" backgroundColor="#ffda00" p={2} m="auto">
-                <Flex as="b" w="60%" justifyContent="space-between">
-                    <Box><Text backgroundColor="black" >Category</Text>
-                        <List backgroundColor="whiteAlpha.900" opacity="0.9" left={{base:'153px',sm:'50px',md:'140px'}}  p={"7px 15px"} mt={2} lineHeight={{base:'35px',sm:'16px',md:'17px',lg:'35px'}}  position={"absolute"} textAlign='left' zIndex="999">
+        <div style={{marginBottom:'20px'}}>
+            <Box  w="80%" backgroundColor="#ffda00" m="auto">
+                <Flex as="b" w="70%"  justifyContent="space-between">
+                    <Box w="28%" backgroundColor="black" p={2}><Text color={"whiteAlpha.900"} >Category</Text>
+                        <List backgroundColor="whiteAlpha.900" opacity="0.9" left={{base:'153px',sm:'50px',md:'140px'}}  p={"7px 15px"} mt={2} lineHeight={{base:'35px',sm:'16px',md:'17px',lg:'35px'}}  position={"absolute"} textAlign='left' zIndex="9">
                             <ListItem>Consumer Electronics</ListItem>
                             <ListItem>Industrial & Scientific</ListItem>
                             <ListItem>Cell Phones & Accessories</ListItem>
@@ -39,9 +39,9 @@ const Slide = () => {
                             <ListItem>Gearbest Promotion</ListItem>
                         </List>
                     </Box>
-                    <Box><Text>Super Deals</Text></Box>
-                    <Box><Text>App Only</Text></Box>
-                    <Box><Text>New Arrivals</Text></Box>
+                    <Box w="23%" p={2} ><Text>Super Deals</Text></Box>
+                    <Box w="23%" p={2}><Text>App Only</Text></Box>
+                    <Box w="23%" p={2}><Text>New Arrivals</Text></Box>
                 </Flex>
             </Box>
             <Slider {...settings} style={{ width: "80%", margin: 'auto' }}>

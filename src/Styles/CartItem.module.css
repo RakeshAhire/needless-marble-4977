@@ -1,0 +1,62 @@
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.Container {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+.ImageDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.boldText {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonIncrement {
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.subtotal {
+    font-weight: bold;
+    color: red
+}
+
+.brandName {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.ContentDiv>p:first-child {
+    width: 350px;
+    overflow: hidden;
+    /* border:1px solid black */
+}
+
+.deleteButton {
+    background-color: #f81c1c;
+    color: white;
+    border: 0px;
+    padding: 10px;
+    width: 80px;
+}
+
+.deleteButton:hover {
+    background-color: #008CBA;
+}
