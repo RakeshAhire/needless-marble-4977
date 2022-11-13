@@ -209,7 +209,14 @@ const updateNewArrival = (newarrival, id) => (dispatch) => {
       console.log(err)
     });
 };
-
+export const saveShippingInfo=(data)=>{
+  // console.log("data",data)
+  return{
+   
+      type:types.SAVE_SHIPPING_INFO,
+      payload:data
+  }
+}
 
 export {getProduct, getProductRequest, addProduct, addProductRequest, 
   getNewArrival, getNewArrivalRequest, deleteNewArrival, deleteNewArrivalRequest,

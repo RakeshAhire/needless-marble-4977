@@ -22,6 +22,7 @@ import {
   ADD_CART_SUCCESS,
   ADD_CART_FAILURE,
   REMOVE_CART_ITEM,
+  SAVE_SHIPPING_INFO,
 } from "./actionTypes";
 
 const initialState = {
@@ -31,6 +32,7 @@ const initialState = {
   isLoading: false,
   isError: false,
   newarrivalUpdated: false,
+  shippingInfo:{},
 };
 
 export const reducer = (oldState = initialState, action) => {
@@ -167,26 +169,6 @@ export const reducer = (oldState = initialState, action) => {
         newarrivalUpdated: payload,
       };
 
-    case ADD_PRODUCT_REQUEST:
-      return {
-        ...oldState,
-        isLoading: true,
-      };
-
-    case ADD_PRODUCT_SUCCESS:
-      return {
-        ...oldState,
-        isLoading: false,
-        products: payload,
-      };
-
-    case ADD_PRODUCT_FAILURE:
-      return {
-        ...oldState,
-        isLoading: false,
-        isError: true,
-      };
-
     case ADD_CART_SUCCESS:
       return {
         ...oldState,
@@ -199,18 +181,11 @@ export const reducer = (oldState = initialState, action) => {
       };
     }
 
-    case ADD_CART_SUCCESS:
+    case SAVE_SHIPPING_INFO:
       return {
         ...oldState,
-        cartData: payload,
+        shippingInfo: payload,
       };
-    case REMOVE_CART_ITEM: {
-      return {
-        ...oldState,
-        cartData: payload,
-      };
-    }
-
     default:
       return oldState;
   }

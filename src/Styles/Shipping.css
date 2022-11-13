@@ -1,0 +1,120 @@
+
+/* #nav{
+    display:none;
+} */
+
+
+
+.shippingContainer{
+    width:50%;
+    flex-direction:column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  margin-left: 6%;
+    /* margin: auto; */
+
+}
+
+.shippingBox{
+    width:100%;
+    /* height:25vw;
+    height:90vh; */
+    background-color: white;
+    overflow:hidden;
+}
+
+.shippingHeading{
+    /* text-align:center; */
+    color: rgba(0,0,0,0.664);
+    font-weight: bolder;
+    /* font:400 1.3vmax "Roboto"; */
+    width:50%;
+    /* margin:auto; */
+    margin-left: 2%;
+    padding:1.3vmax;
+    /* border-bottom:1px solid rgba(0,0,0,0.205) */
+}
+
+.shippingForm{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    padding:2vmax;
+    justify-content: space-evenly;
+    /* height:80%; */
+    transition:all 0.5s;
+
+}
+
+.shippingForm >div{
+    display:flex;
+    width:80%;
+    align-items: center;
+  
+    
+}
+.shippingForm>div >input,
+.shippingForm>div >select{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:1vmax 4vmax;
+    padding-right:1vmax;
+    /* display:block;
+   margin:auto; */
+   font-size: larger;
+    box-sizing:border-box;
+    border:1px solid rgba(0,0,0,0.267);
+    width:80%;
+    border-radius:4px;
+    /* font:300 0.9vmax cursive; */
+    outline:none;
+    margin-bottom: 2%;
+   
+}
+.shippingBtn{
+    border:none;
+    background-color:rgb(255,218,0);
+    font-size:x-large;
+    /* font:300 1vmax "Roboto"; */
+   /* font-family: Arial, Helvetica, sans-serif; */
+    width:90%;
+    padding:1vmax;
+    cursor:pointer;
+    transition: all 0.5s;
+    outline:none;
+    margin:2vmax;
+    margin-left: 8%;
+
+   
+
+}
+.shippingBtn:hover{
+    background-color: rgb(255,174,27);
+}
+.shippingBox h3{
+   width:140px;
+   line-height: 5%;
+}
+@media screen and (max-width:600px) {
+    .shippingBox{
+        width:100%;
+        height:95vh;
+
+}
+.shippingHeading{
+    font:400 6vw "Roboto";
+    padding:5vw;
+   
+
+}
+.shippingForm >div>input,
+.shippingForm>div>select {
+    padding:5vw 10vw;
+    font:300 4vw cursive;
+}
+.shippingBtn{
+    font:300 4vw "Roboto";
+    padding:4vw;
+}
+}

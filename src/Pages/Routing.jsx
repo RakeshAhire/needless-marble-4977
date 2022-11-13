@@ -10,6 +10,8 @@ import { Payment } from "../UI/Payment";
 import Login from "./Login";
 import Register from "./Register";
 import MensFasion from "./MensFashion";
+import { Shipping } from "./Shiiping";
+import { Confirm } from "./Confirm";
 
 const Routing = () => {
   return (
@@ -24,10 +26,11 @@ const Routing = () => {
       <Route path="/cart" element={<Cart />}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/register" element={<Register />}></Route>
-      <Route path="/Product-page" element={<MensFasion />}></Route>
+      <Route path="/product-page" element={<MensFasion />}></Route>
       <Route path="/edit" element={<EditData />}></Route>
       <Route path="*"></Route>
-
+    <Route path="/shipping" element={<Shipping/>}></Route>
+    <Route path="/order" element={<Confirm/>}></Route>
     </Routes>
   );
 };
