@@ -5,8 +5,10 @@ import ProductCard from "../Components/ProductCard";
 import styles from "../Styles/ProductCard.module.css";
 
 import { getProduct } from "../Redux/AppReducer/action";
-import Filters from "../Components/Filters";
 import Pagination from "../Components/Pagination";
+import Filters from "../Components/Filters";
+
+
 
 const MensFasion = () => {
   const dispatch = useDispatch();
@@ -47,7 +49,7 @@ const MensFasion = () => {
               Men's Fashion
             </h1>
             <Link to="/new-arrival">
-            <p>New Arrival</p>
+            <h1 style={{ marginTop: "20px",colour:"black" }}>New Arrival</h1>
             </Link>
             <p>Shoes</p>
             <p>Clothing</p>
@@ -107,7 +109,9 @@ const MensFasion = () => {
             <p>ON SALE</p>
             <p>IN STOCK</p>
             <p>CLEARANCE</p>
-            <h4 style={{ marginTop: "20px" }}>New Arrivals</h4>
+            <Link to="/new-arrival">
+            <h4 style={{ marginTop: "20px",colour:"black" }}>New Arrivals</h4>
+            </Link>
           </div>
         </div>
         <div className={styles.allfilterandproduct}>
