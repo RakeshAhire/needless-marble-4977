@@ -221,18 +221,51 @@ margin-left: 1.6%;
 .formdiv{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+ 
   text-align: left;
   justify-content: flex-start;
   padding: 20px;
+  width: 32%;
 }
 
 .form{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 100%;
   justify-content: flex-start;
   padding: 20px;
   text-align: left;
+}
+
+.input{
+  border: 0.5px solid grey;
+  width: 100%;
+  height: 40px;
+  padding: 6px;
+  margin-top: 5px;
+}
+
+.button{
+  border:  0.5px solid grey;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+
+.button:hover{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-weight: 600;
+}
+
+.formmaindiv{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 98%;
+  margin: auto;
+  margin-top: 20px;
 }

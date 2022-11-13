@@ -10,9 +10,43 @@ const getProductRequest =()=>{
     }
 }
 
+const getNewArrivalRequest =()=>{
+  return{
+
+      type: types.GET_NEWARRIVAL_REQUEST,
+  }
+}
+
 const addProductRequest = () => {
     return {
       type: types.ADD_PRODUCT_REQUEST,
+    };
+  };
+
+  const deleteNewArrivalRequest = () => {
+    return {
+      type: types.DELETE_NEWARRIVAL_REQUEST,
+    };
+  };
+
+
+  const editNewArrivalRequest = () => {
+    return {
+      type: types.EDIT_NEWARRIVAL_REQUEST,
+      
+    };
+  };
+  
+  const updateNewArrivalRequest = () => {
+    return {
+      type: types.UPDATE_NEWARRIVAL_REQUEST,
+    };
+  };
+
+  export const setNewArrivalUpdated = (payload) => {
+    return {
+      type: types.SET_NEWARRIVAL_UPDATED,
+      payload
     };
   };
 
@@ -40,7 +74,7 @@ const getProduct = (queryParams) =>(dispatch) =>{
 const addProduct = (product) => (dispatch) => {
     dispatch(addProductRequest());
     return axios
-      .post(`http://localhost:8080/products`,product)
+      .post(`http://localhost:8080/newarrival`,product)
       .then((res) => {
         dispatch({
           type: types.ADD_PRODUCT_SUCCESS,
@@ -54,4 +88,86 @@ const addProduct = (product) => (dispatch) => {
       });
   };
 
-export {getProduct, getProductRequest, addProduct, addProductRequest}
+  const getNewArrival = (queryParams) =>(dispatch) =>{
+    dispatch(getNewArrivalRequest());
+    return axios.get(`http://localhost:8080/newarrival`,queryParams)
+    .then((res)=>{
+        dispatch({
+            type: types.GET_NEWARRIVAL_SUCCESS,
+            payload: res.data,
+        });
+        console.log(res.data)
+    })
+    .catch((err)=>{
+        dispatch({
+            type: types.GET_NEWARRIVAL_FAILURE,
+        })
+        console.log(err)
+    })
+}
+
+const deleteNewArrival = (id) => (dispatch) => {
+  dispatch(deleteNewArrivalRequest());
+  dispatch(getNewArrivalRequest());
+  return axios
+    .delete(`http://localhost:8080/newarrival/${id}`)
+    .then((res) => {
+      dispatch({
+        type: types.DELETE_NEWARRIVAL_SUCCESS,
+        
+      });
+      
+      
+      
+      console.log(res)
+    })
+    .catch((err) => {
+      dispatch({
+        type: types.DELETE_NEWARRIVAL_FAILURE,
+      });
+    });
+};
+
+const editNewArrival = (id) => (dispatch) => {
+  dispatch(editNewArrivalRequest());
+  return axios
+    .get(`http://localhost:8080/newarrival/${id}`)
+    .then((res) => {
+      
+      dispatch({
+        type: types.EDIT_NEWARRIVAL_SUCCESS,
+        payload: res.data,
+      });
+
+    })
+    .catch((err) => {
+      dispatch({
+        type: types.EDIT_NEWARRIVAL_FAILURE,
+      });
+    });
+};
+
+const updateNewArrival = (newarrival, id) => (dispatch) => {
+  dispatch(updateNewArrivalRequest());
+  return axios
+    .patch(`http://localhost:8080/newarrival/${id}`,newarrival)
+    .then((res) => {
+      dispatch({
+        type: types.UPDATE_NEWARRIVAL_SUCCESS,
+        
+      });
+      console.log(res.data)
+    })
+    .catch((err) => {
+      dispatch({
+        type: types.UPDATE_NEWARRIVAL_FAILURE,
+      });
+      console.log(err)
+    });
+};
+
+
+export {getProduct, getProductRequest, addProduct, addProductRequest, 
+  getNewArrival, getNewArrivalRequest, deleteNewArrival, deleteNewArrivalRequest,
+  editNewArrival,editNewArrivalRequest,updateNewArrival,updateNewArrivalRequest
+}
