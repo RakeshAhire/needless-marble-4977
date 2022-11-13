@@ -4,7 +4,7 @@ import Footer from '../Components/Footer'
 import Slide from '../Components/Slide'
 import Login from './Login'
 import MensFasion from './MensFashion'
-import Register from './Register'
+import Register from "./Register"
 
 
 
@@ -15,8 +15,6 @@ const Home = () => {
       <BelowNavbar />
       <MensFasion/>
       <Footer />
-      <Login />
-      <Register />
     </div>
   )
 }
