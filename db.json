@@ -1799,6 +1799,51 @@
       "price": 28.99,
       "priceTag": "Flash Sale",
       "dollar": "$"
+    },
+    {
+      "discount": "%",
+      "rating": "dd",
+      "brand": "ddd",
+      "category": "ddd",
+      "per": "ddd",
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003858400553519.html?wid=2000001",
+      "image": "ddd",
+      "title": "ddddd",
+      "price": "ddd",
+      "priceTag": "Flash Sale",
+      "dollar": "$",
+      "id": 134
+    },
+    {
+      "discount": "%",
+      "rating": "fcefcc",
+      "brand": "efvef",
+      "category": "vefev",
+      "per": "efd",
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003858400553519.html?wid=2000001",
+      "image": "vrfr",
+      "title": "ddcdc",
+      "price": "vrfvr",
+      "priceTag": "Flash Sale",
+      "dollar": "$",
+      "id": 135
+    },
+    {
+      "discount": "%",
+      "rating": "fcefcc",
+      "brand": "efvef",
+      "category": "vefev",
+      "per": "efd",
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003858400553519.html?wid=2000001",
+      "image": "vrfr",
+      "title": "ddcdc",
+      "price": "vrfvr",
+      "priceTag": "Flash Sale",
+      "dollar": "$",
+      "id": 136
     }
   ],
   "register": [
@@ -1850,19 +1895,20 @@
       "id": 5
     }
   ],
-  "cartData": [
+  "cartData": [],
+  "newarrival": [
     {
       "discount": "%",
       "rating": 4,
       "brand": "mi",
-      "category": "Portable Audio And Video",
-      "id": 3,
-      "per": 43,
+      "category": "Other Consumer Electronics",
+      "id": 1,
+      "per": 58,
       "off": "OFF",
-      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003461848728258.html?wid=2000001",
-      "image": "https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_thumb_220-v3/31d0d9d6c843.jpg",
-      "title": "A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Vision Wireless Remote Monitor Mini Camera - Black",
-      "price": 11.9,
+      "thumbhref": "https://www.gearbest.com/bluetooth-headphones/pp_3004607601686215.html?wid=2000001",
+      "image": "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16414/goods_thumb_220-v1/5f26bc001550.jpg",
+      "title": "Original Xiaomi Redmi Buds 3 Lite Youth Edition Earphone TWS Wireless Bluetooth 5.2 IP54 Headphone Gaming Headset Touch Control Earbuds With Mic",
+      "price": 14.99,
       "priceTag": "Flash Sale",
       "dollar": "$"
     }
