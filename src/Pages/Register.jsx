@@ -1,74 +1,4 @@
-// import { useState } from "react";
-// import axios from "axios";
-// import  "./auth.css"
 
-
-// // export const Register = () => {
-// //     const [signup, setSign] = useState({
-
-// //         email: "",
-// //        // password: "",
-
-// //     })
-   
-
-//     const handleChange = (e) => {
-        
-// //         const { id, value } = e.target;
-// //         setSign({
-// //           ...signup,
-// //           [id]: value,
-// //         });
-
-// //     };
-
-// //     const register = (e) => {
-// //         e.preventDefault();
-
-// //         axios.post("https://morning-scrubland-78864.herokuapp.com/register", signup).then((res) => {
-// //         //    console.log(res.data);
-// //             if(res.data.message){
-// //                // alert(res.data.message)
-// //                 alert("Email or password is Wrong")
-// //                 return
-// //             }
-// //            alert("Register sucessfully")
-// //         });
-// //     };
-// //     return (
-// //         <div>
-// //             <form className="loginform" onSubmit={(e) => {
-// //                 register(e)
-// //             }}>
-// //                 <input id="email" name="username" type="text" onChange={(event) => { handleChange(event); }} required placeholder="    Email" className="login_username"
-// //                 /><br />
-// //                 <input name="password" type="password" /*onChange={(event) => { handleChange(event); }} required */  placeholder="    Create password" className="login_password"
-// //                 /><br />
-// //                 <input name="password" type="password"  required placeholder="    Re-type Password" className="login_password"
-// //                 /><br />
-// //                 <span id="ppk2">
-// //                     <input name="password" type="text" placeholder="    Enter the code" className="login_password1"
-// //                     /><img id="img234" src="https://login.gearbest.com/captcha/default?0.9584008633988392" />
-// //                 </span>
-
-// //                 <br />
-
-// //                 <span id="span4">
-// //                     <input className="checkbox" type="checkbox" />
-// //                     <p>I agree to Gearbest <a>Terms and Conditions</a> and <a>Privacy Policies.</a></p>
-// //                 </span>
-// //                 <p id="tip1">Tip  :  To maximize online security, please do not reuse passwords or choose easy to guess ones on Gearbest.</p>
-// //                 <br />
-// //                 <input type="submit"  value="Register" className="login_submit" />
-// //             </form>
-// //             <div id="goog2">
-// //                 <p>or Connect via</p>
-// //                 <img src="https://blog.hubspot.com/hubfs/image8-2.jpg" />
-// //             </div>
-
-// //         </div>
-// //     )
-// // }
 
 
 import { useRef, useState, useEffect } from "react";
@@ -76,6 +6,7 @@ import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from '../Api/axios';
 import "../Styles/Login.css"
+import { Link } from "react-router-dom";
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -155,18 +86,20 @@ const Register = () => {
     }
 
     return (
-        <>
+        <div className='toplogindiv'>
             {success ? (
                 <section>
                     <h1>Success!</h1>
                     <p>
-                        <a href="#">Sign In</a>
+                        <Link to="/login">
+                        <button className='signin'>Sign In</button>
+                        </Link>
                     </p>
                 </section>
             ) : (
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <h1>Register</h1>
+                    <h1 style={{fontSize:"19px",fontWeight:"700"}}>Register</h1>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="username">
                             Username:
@@ -174,6 +107,7 @@ const Register = () => {
                             <FontAwesomeIcon icon={faTimes} className={validName || !user ? "hide" : "invalid"} />
                         </label>
                         <input
+                            className="registerinput"
                             type="text"
                             id="username"
                             ref={userRef}
@@ -200,6 +134,7 @@ const Register = () => {
                             <FontAwesomeIcon icon={faTimes} className={validPwd || !pwd ? "hide" : "invalid"} />
                         </label>
                         <input
+                        className="registerinput"
                             type="password"
                             id="password"
                             onChange={(e) => setPwd(e.target.value)}
@@ -224,6 +159,7 @@ const Register = () => {
                             <FontAwesomeIcon icon={faTimes} className={validMatch || !matchPwd ? "hide" : "invalid"} />
                         </label>
                         <input
+                        className="registerinput"
                             type="password"
                             id="confirm_pwd"
                             onChange={(e) => setMatchPwd(e.target.value)}
@@ -238,19 +174,25 @@ const Register = () => {
                             <FontAwesomeIcon icon={faInfoCircle} />
                             Must match the first password input field.
                         </p>
-
-                        <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
+                        
+                        <button className='signin' disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
                     </form>
                     <p>
                         Already registered?<br />
                         <span className="line">
-                            {/*put router link here*/}
-                            <a href="#">Sign In</a>
+                        <Link to={"/login"}>
+                            <button className='signin'>Sign In</button>
+                        </Link>
                         </span>
                     </p>
+
+                    <div className='google'>
+                    <h1>or connect via</h1>
+                    <img style={{width:"50px",marginTop:"20px"}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="google" />
+                    </div>
                 </section>
             )}
-        </>
+        </div>
     )
 }
 

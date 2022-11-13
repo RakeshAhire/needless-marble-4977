@@ -1,122 +1,3 @@
-// // import { useState } from "react";
-// // import axios from "axios";
-// // import { useDispatch, useSelector } from "react-redux";
-// // import { isAuth } from "../src/isAuth/action";
-// // // import { useNavigate } from "react-router-dom";
-// // import "./auth.css"
-
-// // export const Login = () => {
-// //   // const navigate=useNavigate()
-// //   const dispatch = useDispatch();
-// //   const [login, setlogin] = useState({
-// //     email: "",
-// //     //  password: "",
-// //   });
-
-// //   const loginData = (e) => {
-// //     const { id, value } = e.target;
-// //     setlogin({
-// //       ...login,
-// //       [id]: value,
-// //     });
-// //   };
-// //   const checklogin = (e) => {
-// //     e.preventDefault();
-// //     dispatch(isAuth(true));
-// //     // navigate("")
-// =======
-// import { useState } from "react";
-// import axios from "axios";
-// import { useDispatch, useSelector } from "react-redux";
-// import { isAuth } from "../Redux/AuthReducer/action";
-// import { useNavigate } from "react-router-dom";
-// import "../Styles/auth.css"
-
-// export const Login = () => {
-//   const navigate=useNavigate()
-//   const dispatch = useDispatch();
-//   const [login, setlogin] = useState({
-//     email: "",
-//      password: "",
-//   });
-
-//   const loginData = (e) => {
-//     const { id, value } = e.target;
-//     setlogin({
-//       ...login,
-//       [id]: value,
-//     });
-//   };
-//   const checklogin = (e) => {
-//     e.preventDefault();
-//     dispatch(isAuth(true));
-//     navigate("")
-// >>>>>>> f884e50e9f2079a22b9ad3ecbb9eb776455a6cb4
-
-// //     axios
-    
-// <<<<<<< HEAD
-// //       .post("https://morning-scrubland-78864.herokuapp.com/login", login)
-// //       .then((res) => {
-// //         console.log(res);
-// //         if (res.status === 200) {
-// //           alert("login sucesfully");
-// //           // navigate("/")
-// //         } else if (res.status === 500) {
-// //           alert("Email or password is wrong");
-// //           return;
-// //         }
-// //       })
-// //       .catch((error) => {
-// //         console.log(error);
-// //         alert("Sign in Successful");
-// //       });
-// //   };
-// //   return (
-// //     <div>
-// //       <form
-// //         className="loginform"
-// //         onSubmit={(e) => {
-// //           checklogin(e);
-// //         }}
-// //       >
-// //         <input
-// //           id="email"
-// //           name="username"
-// //           onChange={(event) => {
-// //             loginData(event);
-// //           }}
-// //           required
-// //           type="text"
-// //           placeholder="    Email"
-// //           className="login_username"
-// //         />
-// //         <br />
-// //         <input
-// //           name="password"
-// //           /* onChange={(event) => {   loginData(event); }} required */ type="password"
-// //           placeholder="   Password"
-// //           className="login_password"
-// //         />
-// //         <br />
-// //         <span id="span3">
-// //           <input className="checkbox" type="checkbox" />
-// //           <p>Keep me signed in</p>
-// //           <p id="ptag">Forgot your password?</p>
-// //         </span>
-// //         <br />
-
-// //         <input type="submit" value="Sign In" className="login_submit" />
-// //       </form>
-// //       <div id="goog2">
-// //         <p>or Connect via</p>
-// //         <img src="https://blog.hubspot.com/hubfs/image8-2.jpg" />
-// //       </div>
-// //     </div>
-// //   );
-// // };
-
-// // export default Login;
 
 
 
@@ -124,6 +5,7 @@ import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../Redux/context/AuthContext";
 import axios from '../Api/axios';
 import "../Styles/Login.css"
+import { Link } from 'react-router-dom';
 
 const LOGIN_URL = '/auth';
 
@@ -179,7 +61,8 @@ const Login = () => {
     }
 
     return (
-        <>
+        <div className='toplogindiv'>
+            <div>
             {success ? (
                 <section>
                     <h1>You are logged in!</h1>
@@ -191,7 +74,7 @@ const Login = () => {
             ) : (
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <h1>Sign In</h1>
+                    <h1 style={{fontSize:"19px",fontWeight:"600"}}>Sign In</h1>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="username">Username:</label>
                         <input
@@ -212,18 +95,28 @@ const Login = () => {
                             value={pwd}
                             required
                         />
-                        <button>Sign In</button>
+                        <Link to="/">
+
+                        <button className='signin'>Sign In</button>
+                        </Link>
                     </form>
                     <p>
                         Need an Account?<br />
                         <span className="line">
-                            {/*put router link here*/}
-                            <a href="#">Sign Up</a>
+                           
+                            <Link to={"/register"}>
+                            <button className='signin'>Sign Up</button>
+                            </Link>
                         </span>
                     </p>
+                    <div className='google'>
+                    <h1>or connect via</h1>
+                    <img style={{width:"50px",marginTop:"20px"}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="google" />
+                    </div>
                 </section>
             )}
-        </>
+            </div>
+        </div>
     )
 }
 
