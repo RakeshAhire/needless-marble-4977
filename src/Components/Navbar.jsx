@@ -4,6 +4,7 @@ import logo from "../Images/Mega Kart Logo.jpg";
 import { FiSearch } from 'react-icons/fi';
 import {AiOutlineUser,AiOutlineShoppingCart} from 'react-icons/ai';
 import { GiLoveMystery } from "react-icons/gi";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [text,setText]=useState()
 
@@ -13,8 +14,8 @@ const Navbar = () => {
       '80%', // 0-30em
       '80%', // 30em-48em
       '90%', // 48em-62em
-      '80%', // 62em+
-    ]} position="fixed" zIndex="99" bgColor={"white"} m="auto" >
+      '100%', // 62em+
+    ]} position="fixed" zIndex="99" bgColor={"white"} m="auto" p={"5px 15px"} >
       <Box >
         <Flex gap={5} justifyContent="flex-end">
           <Text fontSize='md'>Save $3 with app</Text>
@@ -46,7 +47,7 @@ const Navbar = () => {
           <Flex  gap={5}>
             <Flex align={"center"} gap={2}><AiOutlineUser size="1.5em" /> <Text>Sign In</Text> </Flex>
             <Flex align={"center"} gap={2}><GiLoveMystery size="1.5em"/><Text>Favorites</Text> </Flex>
-            <Flex align={"center"} gap={2}><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Flex>
+            <Link to="/cart"><Flex align={"center"} gap={2}><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Flex></Link>
           </Flex>
         </Flex>
       </Box>
