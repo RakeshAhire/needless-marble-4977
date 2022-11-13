@@ -1,5 +1,4 @@
 import axios from "axios";
-import { url } from "../../Api/api";
 import * as types from "./actionTypes"
 
 
@@ -61,17 +60,36 @@ const addProduct = (product) => (dispatch) => {
     });
 };
 
-const AddCartData = (payload) => (dispatch) => {
-    axios.post(`http://localhost:8080/cartData`,payload)
-    .then((res)=>{
-      console.log(res.data)
+const getCartData = () => (dispatch) => {
+  // dispatch(getProductRequest());
+  return axios.get(`http://localhost:8080/cartData`)
+    .then((res) => {
       dispatch(addCartSuccess(res.data))
+      // console.log(res.data)
     })
-    .catch((err)=>{
+    .catch((err) => { console.log(err) })
+}
+
+const AddCartData = (payload) => (dispatch) => {
+  axios.post(`http://localhost:8080/cartData`, payload)
+    .then((res) => {
+      // console.log(res.data)
+    })
+    .catch((err) => {
       dispatch({
-        type:types.ADD_CART_FAILURE,
+        type: types.ADD_CART_FAILURE,
       })
     })
 }
 
-export { getProduct, getProductRequest, addProduct, addProductRequest, addCartSuccess,AddCartData }
+const deleteCartItem = (id) => (dispatch) => {
+  axios.delete(`http://localhost:8080/cartData/${id}`)
+    .then((res) => {
+      dispatch(getCartData());
+    })
+    .catch((e)=>console.log(e))
+}
+
+
+
+export { getProduct, getProductRequest, addProduct, addProductRequest, addCartSuccess, AddCartData, getCartData,deleteCartItem }

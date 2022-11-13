@@ -7,47 +7,30 @@ import '../Styles/ProductDetail.css'
 import { Icons } from './Icons'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { addItemsToCart } from "../Redux/Cart/cartaction"
 import { AddCartData, addCartSuccess } from "../Redux/AppReducer/action"
+import { StarIcon } from "@chakra-ui/icons"
 
 export const ProductDetail = () => {
   const [product, setProduct] = useState("");
-  const [quantity,setQuantity]=useState(1);
+  const [quantity, setQuantity] = useState(1);
   //const [product,setProduct] = useState(null)
   const dispatch = useDispatch()
   const { id } = useParams()
 
   useEffect(() => {
-    // console.log("Rakesh")
     axios.get(`http://localhost:8080/products/${id}`)
-    .then((res) =>setProduct(res.data))
-    .catch(e=>console.log(e))
+      .then((res) => setProduct(res.data))
+      .catch(e => console.log(e))
   }, [])
-  // console.log(product)
-  const setData = () => {
-    // fetch(`https://morning-scrubland-78864.herokuapp.com/addtocart`, {
-    //   method: 'POST',
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify(product)
-    // })
-    // alert("Add to cart successful")
-    // localStorage.setItem('addtocart', JSON.stringify(product))
-    // dispatch(addItemsToCart(product))
 
+
+  const setData = () => {
+    alert("Add to cart successful")
     dispatch(AddCartData(product))
   }
 
   const setOrder = () => {
-    fetch(`https://morning-scrubland-78864.herokuapp.com/placeorder`, {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(product)
-    })
-    localStorage.setItem('placeorder', JSON.stringify(product));
+
   }
   return (
     <div className="product_details">
@@ -56,24 +39,37 @@ export const ProductDetail = () => {
           <img className="product_image" src={product?.image} />
         </div>
         <div className="about_product">
-          <h3 className="product_name">{product?.title}</h3>
-          <h3>Rating: {product?.rating}</h3>
+          <div className="product_name">
+            <h3>{product?.title}</h3>
+            <h3>Rating: {"     "} 
+            {Array(5)
+            .fill('')
+            .map((_, i) => (
+              <StarIcon
+                key={i}
+                color={i < product.rating ? 'red.500' : 'gray.300'}
+              />
+            ))}
+            
+            </h3>
+          </div>
           <div className="flash_sale">
             <h1>{product?.priceTag}</h1>
             <p>10 sold</p>
           </div>
-          <span>
+          <div>
             <p className="product">Price  : </p>
             <h2 className="product_price"> ${product?.price}</h2>
-            <p> $ {(product?.price * 1.2).toFixed(2)} </p>
+            <del> $ {(product?.price * 1.2).toFixed(2)} </del>
             <span>{product.off}</span>
-          </span>
+          </div>
           <div className="shipping">
             <p className="product">Shipping : </p>
-            <p>FREE SHIPPING to United States Via Priority Line </p>
+            <p>FREE SHIPPING to United States Via Priority Line
+              Ship between: May 09 - May 13, Estimated Shipping Time: 7-30 business days
+            </p>
           </div>
-          <p>Ship between: May 09 - May 13, Estimated Shipping Time: 7-30 business days
-          </p>
+
           <div className="color">
             <p className="product"> Color : </p>
             <div>Blue</div>
@@ -82,14 +78,11 @@ export const ProductDetail = () => {
           </div>
           <div className="qty">
             <p className="product">QTY : </p>
-            <button onClick={()=>setQuantity((prev)=>prev+1)}>+</button>
+            <button disabled={quantity===10} onClick={() => setQuantity((prev) => prev + 1)}>+</button>
             <p>{quantity}</p>
-            <button onClick={()=>setQuantity((prev)=>prev-1)}>-</button>
+            <button disabled={quantity===0} onClick={() => setQuantity((prev) => prev - 1)}>-</button>
             <p>in stock</p>
           </div>
-
-
-
         </div>
 
 
@@ -100,7 +93,7 @@ export const ProductDetail = () => {
         </div>
         <div className="cartbtn">
 
-         <Link to="/"><button className="linkbtn" onClick={setData}>Add To Cart</button></Link>
+          <Link to="/"><button className="linkbtn" onClick={setData}>Add To Cart</button></Link>
 
           <Link id="linkbutton" to={`/shipping`}>
             <button className="linkbtn" onClick={setOrder}>Buy Now</button>

@@ -5,7 +5,7 @@ import { CheckoutSteps } from "./CheckoutSteps";
 import "../Styles/CheckoutSteps.css"
 export const Payment = () => {
 
-    var shippingInfo =useSelector((store)=>store.shippingInfo.shippingInfo);
+    // var shippingInfo =useSelector((store)=>store.shippingInfo.shippingInfo);
     const navigate = useNavigate();
 
     let number =Math.floor(Math.random() * 100000000000);
