@@ -8,7 +8,7 @@ import { Icons } from './Icons'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addItemsToCart } from "../Redux/Cart/cartaction"
-import { addCartSuccess } from "../Redux/AppReducer/action"
+import { AddCartData, addCartSuccess } from "../Redux/AppReducer/action"
 
 export const ProductDetail = () => {
   const [product, setProduct] = useState("");
@@ -36,7 +36,7 @@ export const ProductDetail = () => {
     // localStorage.setItem('addtocart', JSON.stringify(product))
     // dispatch(addItemsToCart(product))
 
-    dispatch(addCartSuccess(product))
+    dispatch(AddCartData(product))
   }
 
   const setOrder = () => {

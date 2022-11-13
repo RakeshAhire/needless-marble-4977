@@ -15,7 +15,7 @@ const initialState = {
 
 export const reducer = (oldState = initialState, action) => {
   const { type, payload } = action;
-  
+
   switch (type) {
 
     case GET_PRODUCTS_REQUEST:
@@ -82,7 +82,7 @@ export const reducer = (oldState = initialState, action) => {
     case ADD_CART_SUCCESS:
       return {
         ...oldState,
-        cartData:[...initialState.cartData,payload]
+        cartData:payload,
       } 
     
     
