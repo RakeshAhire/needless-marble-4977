@@ -95,3 +95,19 @@ height: 40px;
    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
    padding:10px;
 }
+
+.continueShop{
+   width: 70%;
+   border: 1px solid black;
+   color: black;
+   padding: 30px;
+   margin: auto;
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+.continueShop>button {
+   padding: 10px 20px;
+   background-color: #ffda00;
+   
+}

@@ -47,7 +47,7 @@ const Navbar = () => {
           <Flex  gap={5}>
             <Flex align={"center"} gap={2}><AiOutlineUser size="1.5em" /> <Text>Sign In</Text> </Flex>
             <Flex align={"center"} gap={2}><GiLoveMystery size="1.5em"/><Text>Favorites</Text> </Flex>
-            <Link to="/cart"><Flex align={"center"} gap={2}><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Flex></Link>
+            <Link to="/cart"><Flex align={"center"} gap={2} color={'black'}><AiOutlineShoppingCart size="1.5em" /><Text>Cart</Text> </Flex></Link>
           </Flex>
         </Flex>
       </Box>
