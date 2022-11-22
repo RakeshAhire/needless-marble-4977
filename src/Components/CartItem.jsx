@@ -34,7 +34,7 @@ const CartItem = ({ brand,title, image, price, discount,per, off,id,dollar,remov
            <button className={styles.buttonIncrement}>
              -
            </button>
-           <span className={styles.buttonIncrement}>Quanitty</span>
+           <span className={styles.buttonIncrement}>Quantity</span>
            <button className={styles.buttonIncrement}
            >
              +

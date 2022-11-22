@@ -24,7 +24,7 @@ const Slide = () => {
                 <Flex as="b" w="70%"  justifyContent="space-between">
                     <Box w="28%" backgroundColor="black" p={2}><Text color={"whiteAlpha.900"} >Category</Text>
                         <List backgroundColor="whiteAlpha.900" opacity="0.9" left={{base:'153px',sm:'50px',md:'140px'}}  p={"7px 15px"} mt={2} lineHeight={{base:'35px',sm:'16px',md:'17px',lg:'35px'}}  position={"absolute"} textAlign='left' zIndex="9">
-                            <Link to="/product-page"><ListItem>Consumer Electronics</ListItem></Link>
+                            <Link to="/product-page" ><ListItem color="black" >Consumer Electronics</ListItem></Link>
                             <ListItem>Industrial & Scientific</ListItem>
                             <ListItem>Cell Phones & Accessories</ListItem>
                             <ListItem>Appliances</ListItem>

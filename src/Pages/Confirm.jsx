@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import "../Styles/Confirm.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Confirm = () => {
   const shippingInfo = useSelector((store) => store.AppReducer.shippingInfo);
@@ -13,6 +13,7 @@ export const Confirm = () => {
   const [text, setText] = useState("");
   const [subTotal, setsubTotal] = useState(0);
   const [grand, setGrand] = useState(0);
+  const navigate = useNavigate()
   useEffect(() => {
     axios.get(`http://localhost:8080/addAddress`).then((res) => {
       console.log("dbdata", res.data);
@@ -52,6 +53,10 @@ export const Confirm = () => {
   const amount = () => {
     
     localStorage.setItem("amount", JSON.stringify(grand));
+
+    alert("Order Placed Successfully")
+    navigate("/")
+
   };
 
   return (

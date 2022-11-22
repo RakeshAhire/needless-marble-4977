@@ -72,6 +72,8 @@ const AdminPage = () => {
     }
   };
 
+  
+
   return (
     <div>
       <Link to="/">
@@ -164,10 +166,13 @@ const AdminPage = () => {
             name="price"
             onChange={handleinputChange}
           />
+        <Link to="/new-arrival">
 
           <button className={styles.button} type="submit">
             Add Products
           </button>
+        </Link>
+        
         </form>
       </div>
       

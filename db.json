@@ -1851,6 +1851,26 @@
       "user": "sohir94yadav",
       "pwd": "Rohit@123",
       "id": 1
+    },
+    {
+      "user": "Pooja123",
+      "pwd": "Pooja@123",
+      "id": 2
+    },
+    {
+      "user": "ROHIT123",
+      "pwd": "Rohit@123",
+      "id": 3
+    },
+    {
+      "user": "rohit123",
+      "pwd": "Rohit@123",
+      "id": 4
+    },
+    {
+      "user": "rohit123",
+      "pwd": "Rohit@123",
+      "id": 5
     }
   ],
   "auth": [
@@ -1858,46 +1878,24 @@
       "user": "sohir94yadav",
       "pwd": "Rohit@123",
       "id": 1
-    },
-    {
-      "user": "rohit94yadav",
-      "pwd": "Rohit@123",
-      "id": 2
-    },
-    {
-      "user": "rohitinvijefnv",
-      "pwd": " vd ffv  f",
-      "id": 3
-    },
-    {
-      "user": "cwewcewc",
-      "pwd": "cwdedce",
-      "id": 4
-    },
-    {
-      "user": "shubham123",
-      "pwd": "12",
-      "id": 5
     }
   ],
   "cartData": [
     {
       "discount": "%",
-      "rating": 4,
-      "brand": "mi",
-      "category": "Video Game",
-      "id": 2,
-      "per": 27,
+      "rating": 3,
+      "brand": "qcy",
+      "category": "Camera And Photo",
+      "id": 6,
+      "per": 55,
       "off": "OFF",
-      "thumbhref": "https://www.gearbest.com/home-smart-improvements/pp_3007240449318780.html?wid=2000001",
-      "image": "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16493/goods_thumb_220-v1/a366f0bb3c43.jpg",
-      "title": "Xiaomi Aqara Two-way Control Module Wireless Relay Controller 2 Channels Work with Apple Homekit Mi Home APP",
-      "price": 27.99,
+      "thumbhref": "https://www.gearbest.com/other-consumer-electronics/pp_3004241921958612.html?wid=2000001",
+      "image": "https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16403/goods_thumb_220-v1/167be3e01d5c.jpg",
+      "title": "KERNUAP SunPower Folding 10W Solar Cells Charger 5V 2.1A USB Output Devices Portable Solar Panels for Smartphones",
+      "price": 26.88,
       "priceTag": "Flash Sale",
       "dollar": "$"
-    }
-  ],
-  "newarrival": [
+    },
     {
       "discount": "%",
       "rating": 4,
@@ -1912,6 +1910,83 @@
       "price": 14.99,
       "priceTag": "Flash Sale",
       "dollar": "$"
+    }
+  ],
+  "newarrival": [
+    {
+      "discount": "%",
+      "rating": 2,
+      "brand": "ticwatch",
+      "category": "Other Consumer Electronics",
+      "id": 39,
+      "per": 52,
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3004658572002794.html?wid=2000001",
+      "image": "https://gloimg.gbtcdn.com/soa/gb/item/6919674405698334720/16528/goods_thumb_220-v3/67231d93e158.jpg",
+      "title": "Hiseeu 3MP PTZ WIFI Camera Outdoor 1536P 1080P 5X Digital Zoom Speed Dome IP Camera 5MP Audio P2P Network CCTV Surveillance",
+      "price": 28,
+      "priceTag": "",
+      "dollar": "$"
+    },
+    {
+      "discount": "%",
+      "rating": "fqewf",
+      "brand": "fqw",
+      "category": "fqw",
+      "per": "qw",
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003858400553519.html?wid=2000001",
+      "image": "fqw",
+      "title": "fwaf",
+      "price": "fqew",
+      "priceTag": "Flash Sale",
+      "dollar": "$",
+      "id": 42
+    },
+    {
+      "discount": "%",
+      "rating": "feqf",
+      "brand": "fwewf",
+      "category": "fwe",
+      "per": "fwe",
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003858400553519.html?wid=2000001",
+      "image": "fwe",
+      "title": "wqwr",
+      "price": "fwe",
+      "priceTag": "Flash Sale",
+      "dollar": "$",
+      "id": 43
+    },
+    {
+      "discount": "%",
+      "rating": "feqf",
+      "brand": "fwewf",
+      "category": "fwe",
+      "per": "fwe",
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003858400553519.html?wid=2000001",
+      "image": "fwe",
+      "title": "wqwr",
+      "price": "fwe",
+      "priceTag": "Flash Sale",
+      "dollar": "$",
+      "id": 44
+    },
+    {
+      "discount": "%",
+      "rating": "feqf",
+      "brand": "fwewf",
+      "category": "fwe",
+      "per": "fwe",
+      "off": "OFF",
+      "thumbhref": "https://www.gearbest.com/ip-cameras/pp_3003858400553519.html?wid=2000001",
+      "image": "fwe",
+      "title": "wqwr",
+      "price": "fwe",
+      "priceTag": "Flash Sale",
+      "dollar": "$",
+      "id": 45
     }
   ],
   "addAddress": [
@@ -1929,15 +2004,39 @@
     },
     {
       "First_Name": "Rohit",
-      "Last_Name": "Yadav",
+      "Last_Name": "yadav",
       "Address": "Gurgaon",
-      "City": "Delhi",
-      "State": "DL",
-      "Country": "IN",
-      "PinCode": "4568665",
-      "PhoneNo": "8568978452",
-      "Email": "rohit123@gmail.com",
+      "City": "Pataudi",
+      "State": "BIL",
+      "Country": "AZ",
+      "PinCode": "122504",
+      "PhoneNo": "8505813188",
+      "Email": "rohit94yadav@gmail.com",
       "id": 2
+    },
+    {
+      "First_Name": "Rohit",
+      "Last_Name": "yadav",
+      "Address": "Gurgaon",
+      "City": "Pataudi",
+      "State": "3",
+      "Country": "AT",
+      "PinCode": "122504",
+      "PhoneNo": "8505813188",
+      "Email": "rohit94yadav@gmail.com",
+      "id": 3
+    },
+    {
+      "First_Name": "Rohit",
+      "Last_Name": "yadav",
+      "Address": "Gurgaon",
+      "City": "Pataudi",
+      "State": "13",
+      "Country": "BH",
+      "PinCode": "122504",
+      "PhoneNo": "8505813188",
+      "Email": "rohit94yadav@gmail.com",
+      "id": 4
     }
   ]
 }

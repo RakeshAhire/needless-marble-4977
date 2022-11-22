@@ -49,7 +49,7 @@ const MensFasion = () => {
               Men's Fashion
             </h1>
             <Link to="/new-arrival">
-            <h1 style={{ marginTop: "20px",colour:"black" }}>New Arrival</h1>
+            <h1 style={{ marginTop: "20px",color:"black" }}>New Arrival</h1>
             </Link>
             <p>Shoes</p>
             <p>Clothing</p>

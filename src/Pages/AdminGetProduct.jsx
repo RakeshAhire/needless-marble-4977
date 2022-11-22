@@ -18,7 +18,7 @@ const AdminGetProduct = () => {
   const handleDelete = (id) => {
     if (window.confirm("Are You Sure")) {
       dispatch(deleteNewArrival(id));
-      navigate("/admin-page");
+      navigate("/new-arrival");
     }
   };
 
